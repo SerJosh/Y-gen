@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Sedan+SC&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Cinzel:wght@400..900&family=Noto+Sans+JP:wght@100..900&family=Sedan+SC&family=Urbanist:ital,wght@0,100..900;1,100..900&family=Ysabeau+SC:wght@1..1000&display=swap');
 
 html {
     height: 100%;
 }
+
 
 body {
     background: url('/media/japanese-hero-beta.jpg') no-repeat center center fixed;
@@ -11,23 +12,40 @@ body {
     color: #555;
 }
 
-
-/* from Bulma */
-.icon {
-    align-items: center;
-    display: inline-flex;
-    justify-content: center;
-    height: 1.5rem;
-    width: 1.5rem;
-}
+/* Base.html page */
+/* logo Header */
 
 .logo-font {
     font-family: Sedan SC;
 }
 
+.logo-font-head {
+    font-family: Sedan SC;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.symbol {
+    font-family: Cactus Classical Serif;
+    font-size:35px;
+    font-weight: 400;
+    /* text-shadow: #222; */
+    
+    
+}
+
 .main-logo-link {
     width: fit-content;
 }
+
+/* from Bulma */
+/* .icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+} */
 
 .shop-now-button {
     background: black;
