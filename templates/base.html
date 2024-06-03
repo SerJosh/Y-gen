@@ -33,9 +33,9 @@
 
     <title>Yugen {% block extra_title %}{% endblock %}</title>
   </head>
-  <body>
+  <body class="bk-col">
     <header class="container-fluid fixed-top">
-      <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex ">
+      <div id="topnav" class="row head-layover pt-lg-2 d-none d-lg-flex ">
 
         <!-- Logo -->
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
@@ -135,7 +135,7 @@
         </div>
       </div>
       <!-- Filter -->
-      <div class="row bg-white">
+      <div class="row head-layover">
         <nav class="navbar navbar-expand-lg navbar-light w-100">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -145,13 +145,11 @@
         </nav>
     </div>
     <!-- Filter -->
-
-
     </header>
 
-    {% if messages %}
+    <!-- {% if messages %}
         <div class="message-container"></div>
-    {% endif %}
+    {% endif %} -->
 
     {% block page_header %}
     {% endblock %}
@@ -162,7 +160,7 @@
     {% block postloadjs %}
     {% endblock %}
 
-    <!-- <footer class="footer mt-auto py-3 bg-dark">
+    <footer class="footer mt-auto py-3 bg-dark">
         <p class="m-0 text-center text-white copyright">
           {% block copyright %}
           Copyright 2024 Ser Josh
@@ -174,6 +172,6 @@
             aria-label="Visit our Github page (opens in a new tab)" class="text-white"><i
               class="fa-brands fa-github"></i></a>
         </p>
-      </footer> -->
+      </footer>
   </body>
 </html>
