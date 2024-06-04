@@ -76,15 +76,16 @@ header {
 
 .foot-color {
     background-color:rgba(211, 211, 211, 0.9);
-    border:5px solid #000000; margin:5px;
+    border:5px solid #000000; 
+
 }
 
 /* Allauth templates */
 
-.form {
+.form-allauth {
     background-color: rgba(0, 0, 0, 0.5);
     height: 300px;
-    margin-bottom: 200%;
+    /* margin-bottom: 200%; */
 }
 
 .logged-img {
@@ -96,7 +97,8 @@ header {
 }
 
 .form-lg-in {
-    width: 55rem;
+    width: 30rem;
+    height: 30rem;
 }
 
 .form-lg-out {
@@ -110,6 +112,11 @@ header {
 
 .form-verify {
     width: 25rem;
+}
+
+.form-verify-ps {
+    width: 25rem;
+    height: 25rem;
 }
 
 /* Base.html page */
@@ -175,6 +182,25 @@ header {
     border: 1px solid black !important;
 }
 
+.btn-welcome {
+    font-family: Sedan SC, sans-serif;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-color: rgba(0, 0, 0, 0.0);
+    clip-path: polygon(15px 0,
+            calc(100% - 15px) 0,
+            100% 15px,
+            100% calc(100% - 15px),
+            calc(100% - 15px) 100%,
+            15px 100%,
+            0 calc(100% - 15px),
+            0 15px);
+    font-size: 20px;
+}
+
+.helptext {
+    display: none;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -201,5 +227,69 @@ header {
     .header-container-lg {
         padding-top: 14px;
         padding-right: 100%
+    }
+}
+
+
+
+@media screen and (max-width: 690px) {
+
+    .form-verify {
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .logged-img {
+        height: auto;
+        width: 100%;
+    }
+
+    .reg-img {
+        height: 480px;
+    }
+
+    .form-reg {
+        width: 25rem;
+        height: 35rem;
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .form-lg-in {
+        width: 20rem;
+        height: 23rem;
+        font-size: small;
+    }
+
+    .form-lg-out {
+        width: 18rem;
+    }
+
+    .form-verify-ps {
+        font-size: small;
+    }
+
+    .form-verify {
+        font-size: small;
+        width: 18rem;
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+    .form-reg {
+        width: 18rem;
+        height: 35rem;
+    }
+
+    .reg-img {
+        height: auto;
+    }
+
+    .form-verify-ps {
+        width: 18rem;
+        height: 30rem;
     }
 }
