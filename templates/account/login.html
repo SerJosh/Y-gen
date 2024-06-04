@@ -8,16 +8,21 @@
 
 {% block content %}
 <!-- Sign-in content -->
-<div class="container-fluid logged-img"
+<div class="container-fluid logged-img header-container-lg"
     style="background-image: url(https://res.cloudinary.com/dkbfmfd5z/image/upload/v1711582792/bookstars_xor54k.jpg)">
-    <div class="container form form-lg-in text-white">
+    <div class=" container-fluid form form-lg-in text-white">
         <div class="row ">
             <h3>{% trans "Sign In" %}</h3>
 
-            <p>{% blocktrans %}Welcome back to wordsmith.<br> If you have not, please <a
+        </div>
+
+        <div class="row ">
+
+            <p>{% blocktrans %}Welcome back to Yūgen.<br> If you have not, please <a
                     class="btn btn-dark btn-welcome" href="{{ signup_url }}">Sign Up</a>
                 first.{% endblocktrans %}</p>
-        </div>
+            </div>
+        
         <div class="row">
             <!-- Sign-in form -->
             <form class="login" method="POST" action="{% url 'account_login' %}">
