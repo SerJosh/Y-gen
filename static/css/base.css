@@ -5,11 +5,16 @@ html {
 }
 
 
-body {
+.back0 {
     background: url('/media/jap-2.jpg') no-repeat center center;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
+}
+
+header {
+    border:5px solid #000000; margin:5px
+
 }
 
 .head-layover {
@@ -53,6 +58,52 @@ body {
 
 .seperate {
     height: 80px;
+}
+
+.social-links {
+    font-size: 160%;
+    clear: both;
+    word-spacing: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.foot-color {
+    background-color:rgba(211, 211, 211, 0.9);
+    border:5px solid #000000; margin:5px;
+}
+
+/* Allauth templates */
+
+.form {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 300px;
+    margin-top: 2%;
+}
+
+.logged-img {
+    background-size: cover;
+    background-position: center center;
+    max-width: 100%;
+    height: 600px;
+    flex-grow: 5;
+}
+
+.form-lg-in {
+    width: 55rem;
+}
+
+.form-lg-out {
+    width: 35rem;
+}
+
+.form-reg {
+    width: 55rem;
+    height: 35rem;
+}
+
+.form-verify {
+    width: 25rem;
 }
 
 /* Base.html page */
