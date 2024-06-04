@@ -4,18 +4,40 @@ html {
     height: 100%;
 }
 
+p {
+    font-family: Urbanist, sans-serif;
+}
 
-.back0 {
-    background: url('/media/jap-2.jpg') no-repeat center center;
-    background-size: cover;
-    height: calc(100vh - 164px);
-    color: #555;
+h1, h2, h3 {
+    font-family: Sedan SC, sans-serif;
+}
+
+
+/* Header/Nav bar */
+
+.main-logo-link {
+    width: fit-content;
+}
+
+.logo-font {
+    font-family: Sedan SC, sans-serif;
+}
+
+.logo-font-head {
+    font-family: Sedan SC, sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.symbol {
+    font-family: Cactus Classical Serif, sans-serif;
+    font-size:35px;
+    font-weight: 400; 
 }
 
 header {
     border:5px solid #000000; margin:5px;
-    background-color: rgba(211, 211, 211, 0.9);
-
+    background-color: rgba(211, 211, 211, 0.5);
 }
 
 .head-layover {
@@ -25,6 +47,16 @@ header {
 .log-head {
     border:5px solid #000000; margin:0px;
     background-color: rgba(211, 211, 211, 0.9);
+}
+
+
+/* Home page */
+
+.back0 {
+    background: url('/media/jap-2.jpg') no-repeat center center;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: #555;
 }
 
 .back {
@@ -62,9 +94,8 @@ header {
     border:5px solid #000000; padding:3px; margin:5px
 }
 
-.seperate {
-    height: 80px;
-}
+
+/* Footer */
 
 .social-links {
     font-size: 160%;
@@ -77,15 +108,14 @@ header {
 .foot-color {
     background-color:rgba(211, 211, 211, 0.9);
     border:5px solid #000000; 
-
 }
+
 
 /* Allauth templates */
 
 .form-allauth {
     background-color: rgba(0, 0, 0, 0.5);
     height: 300px;
-    /* margin-bottom: 200%; */
 }
 
 .logged-img {
@@ -119,39 +149,12 @@ header {
     height: 25rem;
 }
 
-/* Base.html page */
-/* logo Header */
-
-.logo-font {
-    font-family: Sedan SC;
+.helptext {
+    display: none;
 }
 
-.logo-font-head {
-    font-family: Sedan SC;
-    font-size: 50px;
-    font-weight: 400;
-}
 
-.symbol {
-    font-family: Cactus Classical Serif;
-    font-size:35px;
-    font-weight: 400;
-    
-    
-}
-
-.main-logo-link {
-    width: fit-content;
-}
-
-/* from Bulma */
-/* .icon {
-    align-items: center;
-    display: inline-flex;
-    justify-content: center;
-    height: 1.5rem;
-    width: 1.5rem;
-} */
+/* Buttons */
 
 .shop-now-button {
     background: black;
@@ -197,11 +200,9 @@ header {
     font-size: 20px;
 }
 
-.helptext {
-    display: none;
-}
 
-/* -------------------------------- Media Queries */
+
+/* Media Queries */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
@@ -229,8 +230,6 @@ header {
         padding-right: 100%
     }
 }
-
-
 
 @media screen and (max-width: 690px) {
 
