@@ -11,28 +11,23 @@
 <div class="container-fluid logged-img header-container-lg"
     style="background-image: url(https://res.cloudinary.com/dkbfmfd5z/image/upload/v1711582792/bookstars_xor54k.jpg)">
     <div class=" container-fluid form-allauth form-lg-in text-white">
-            <h3>{% trans "Sign In" %}</h3>
-
-        
-
-
-            <p>{% blocktrans %}Welcome back to Yūgen.<br> If you have not, please <a
-                    class="btn btn-dark btn-welcome" href="{{ signup_url }}">Sign Up</a>
-                first.{% endblocktrans %}</p>
-        
-            <!-- Sign-in form -->
-            <form class="login" method="POST" action="{% url 'account_login' %}">
-                {% csrf_token %}
-                {{ form.as_p }}
-                {% if redirect_field_value %}
-                <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-                {% endif %}
-                <button class="btn btn-dark btn-welcome" type="submit">{% trans "Sign In" %}</button>
-                <!--Password Reset button-->
-                <br>
-                <a class="btn btn-dark btn-welcome"
-                    href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
-            </form>
+        <h3>{% trans "Sign In" %}</h3>
+        <p>{% blocktrans %}Welcome back to Yūgen.<br> If you have not, please <a class="btn btn-dark btn-welcome"
+                href="{{ signup_url }}">Sign Up</a>
+            first.{% endblocktrans %}</p>
+        <!-- Sign-in form -->
+        <form class="login" method="POST" action="{% url 'account_login' %}">
+            {% csrf_token %}
+            {{ form.as_p }}
+            {% if redirect_field_value %}
+            <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+            {% endif %}
+            <button class="btn btn-dark btn-welcome" type="submit">{% trans "Sign In" %}</button>
+            <!--Password Reset button-->
+            <br>
+            <a class="btn btn-dark btn-welcome"
+                href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
+        </form>
     </div>
 </div>
 {% endblock content %}

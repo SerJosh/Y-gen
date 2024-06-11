@@ -11,19 +11,18 @@
 <div class="container-fluid logged-img reg-img header-container-lg"
   style="background-image: url(https://res.cloudinary.com/dkbfmfd5z/image/upload/v1711582792/bookstars_xor54k.jpg)">
   <div class="container-fluid form-allauth form-reg text-white">
-      <h3>{% trans "Sign Up" %}</h3>
-
-      <p>{% blocktrans %}Already have an account? Then please <a class="btn btn-dark btn-welcome"
-          href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
-      <!-- sign-up form -->
-      <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
-        {% csrf_token %}
-        {{ form.as_p }}
-        {% if redirect_field_value %}
-        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-        {% endif %}
-        <button class="btn btn-dark btn-welcome" type="submit">{% trans "Sign Up" %} &raquo;</button>
-      </form>
+    <h3>{% trans "Sign Up" %}</h3>
+    <p>{% blocktrans %}Already have an account? Then please <a class="btn btn-dark btn-welcome"
+        href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
+    <!-- sign-up form -->
+    <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
+      {% csrf_token %}
+      {{ form.as_p }}
+      {% if redirect_field_value %}
+      <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+      {% endif %}
+      <button class="btn btn-dark btn-welcome" type="submit">{% trans "Sign Up" %} &raquo;</button>
+    </form>
   </div>
 </div>
 
