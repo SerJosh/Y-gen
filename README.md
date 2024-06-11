@@ -1,10 +1,13 @@
 # Yugen
 
 ## Introduction
+Yugen is a website built on Django using Python, JavaScript, HTML and CSS. The site is a full B2C ecommerce website for a fictional business. The business sells Japanese inspired artworks, be it for decoration in your office, home or anywhere you want; ranging from Traditional artworks, Modern artworks or Anime artworks. Users of the site can search for products via manual keyword search, filter by category or browse through all products available. They can select differing quantities of products for purchase and add them to their shopping cart, and proceed through a purchase process designed to be simple and with minimal steps. 
+
+!! Incomplete !!
 
 ![Screenshot of homepage]()
 
-[View the live website on Heroku]()
+[View the live website on Heroku](https://yugen-8b9d8c6f3a88.herokuapp.com/)
 
 Please note: To open any links in this document in a new browser tab, please press CTRL + Click.
 
@@ -60,14 +63,78 @@ Please note: To open any links in this document in a new browser tab, please pre
 * 
 
 ### Epics
-[here]()
+!!!!!!!!
 
-1. 
-2. 
-3. 
-4. 
-5. 
-6. 
+XX Epics were created which were then further developed into XX User Stories. The details on each epic, along with the user stories linked to each one can be found in the project kanban board [here](https://github.com/users/SerJosh/projects/7)
+
+1. Django Initial Setup [#1](https://github.com/SerJosh/Yugen/issues/1)
+
+    As a **Developer**, I can **setup the Django Environment**, so that **I can initialize the development environment**
+
+   #### Potential User Stories 
+   1. Create Django Project
+   2. Install required packages
+   3. Secure the Keys
+   4.  Deploy to Heroku
+
+
+2. User Login / Logout / Register [#2](https://github.com/SerJosh/Yugen/issues/2)
+
+   As a **User**, I can **register an account or log in and log out of my account**, so that **I can create an account and keep my account secure**
+
+   #### Potential User Stories
+   1. User Register
+   2. User Login
+   3. User Logout
+   4. User Email Confirmation
+   5.  User Password Reset 
+
+3. Enhancing website design [#10](https://github.com/SerJosh/Yugen/issues/10)
+
+   As a **website owner**, I can **improve the visual appeal and user experience of the website**, so that **visitors are more engaged, are able to use the site on multiple devices and have a clear understanding on what is happening**
+
+   #### Potential User Stories
+   1. Implement Responsive Design
+   2. Utilize attractive fonts and color schemes
+   3. Enhance the design of each page in the project
+
+4. Home page/ Landing page [#14](https://github.com/SerJosh/Yugen/issues/14)
+
+   As a **Site Owner**, I would like **the site to fulfil its general purpose to users on the home page**, so that **it is easy to use for users to navigate to where they want to go **
+
+   #### Potential User Stories
+   1. Color Scheme – light/dark mode
+   2. Create nav-bar with relevant content for navigation
+   3.  home page content
+   4.  Art competition form
+
+5. Product Viewing [#17](https://github.com/SerJosh/Yugen/issues/17)
+
+   As a **user**, I can **view different levels of product information**, so that **I can select which amount of detail I want**
+
+   #### Potential User Stories
+   1. View product details
+   2. Search for a product
+   3. View products by category
+
+6. Shopping Cart [#21](https://github.com/SerJosh/Yugen/issues/21)
+
+   As a **user**, I can **add/remove products to my shopping cart**, so that **I can control the list products I am going to purchase**
+
+   #### Potential User Stories
+   1. Add product to cart
+   2. Edit products in cart
+   3. View the products in my cart
+   4. Proceed to checkout
+
+7. Checkout [#26](https://github.com/SerJosh/Yugen/issues/26)
+
+   As a **user**, I can **purchase the items I have selected**, so that **I may place my order**
+
+   #### Potential User Stories
+   1. Payment
+   2. Fill out address details for checkout
+   3. Order Confirmation
 
 
 ### User Stories
@@ -85,34 +152,57 @@ Please note: To open any links in this document in a new browser tab, please pre
 
 Explaination
 
-These are the user stories that were completed for the projects first release, by Epic.
+These are the user stories that were completed for the project, by Epic.
 
 1. Initial Django setup
-    * []()
-    * []()
-    * []()
+    * [US#3](https://github.com/SerJosh/Yugen/issues/3) Django Setup - As a **Developer**, I can **set up Django and install the supporting libraries needed**, so that **I am ready to start development**
+    * [US#4](https://github.com/SerJosh/Yugen/issues/4) Secure the Keys - As a **Developer**, I can **setup the Django environment to secure the secret keys**, so that **I do not expose the keys in an insecure way**
+    * [US#5](https://github.com/SerJosh/Yugen/issues/5) Deployment to Heroku - As a **Developer**, I want to **deploy the app to Heroku**, so that **I can confirm everything works before development of the site.**
 
 <br>
 
-2. 
+2. User Login / Logout / Register
+   * [US#6](https://github.com/SerJosh/Yugen/issues/6) Create a User Account - As a **user**, I would like **to be able to create an account**, so that **I don’t have to enter my details every time I place an order**
+    * [US#7](https://github.com/SerJosh/Yugen/issues/7) User Account Login / Logout - As a **User**, I can **login or logout of my account**, so that **I can keep my account secure**
+    * [US#8](https://github.com/SerJosh/Yugen/issues/8) Users must confirm their email - As a **developer**, I can **make users confirm their email**, so that **I can keep my account secure**
+    * [US#9](https://github.com/SerJosh/Yugen/issues/9) Users can reset their password - As a **user** I can **reset my password** so that **if I forget it I can still access my account**
+    
 
 <br>
 
-3. 
+3. Enhancing website design
+    * [US#11](https://github.com/SerJosh/Yugen/issues/11) Implementation of Responsive Design - As a **user**, I can **easily navigate and view content**, so that **I can use any device, no matter what the screen size**
+    * [US#12](https://github.com/SerJosh/Yugen/issues/12) Utilize attractive fonts and color scheme - As a **user**, I can **visit a website that is enterprising and easy on the eye**, so that **when I interact with the site, it is easy and enjoyable**
+    * [US#13](https://github.com/SerJosh/Yugen/issues/13) Enhance the design of each page of the project - As a **user**, I can **engage the content on each page of the website**, so that **I can understand the content on each page with it being easy on the eye**
 
 <br>
 
-4. 
+4. Home page/ Landing page
+    * [US#15](https://github.com/SerJosh/Yugen/issues/15) Create nav-bar with relevant content for navigation - As a **user**, I can **access and see the necessary content on the nav-bar**, so that **it is easily reachable and have control on every page**
+    * [US#16](https://github.com/SerJosh/Yugen/issues/16) home page content - As a **user**, I would like to **see an engaging landing page, with an attractive hero image and a bigger picture of what the website has to offer**, so that **I can make more informative decisions in an engaging way**
 
 <br>
 
-5. 
+5. Product Viewing
+    * [US#18](https://github.com/SerJosh/Yugen/issues/18) View Product Details - As a **user**, I can **view the full details for a product**, so that **I can make an informed purchase decision**
+    * [US#19](https://github.com/SerJosh/Yugen/issues/19) Product Search - As a **user**, I can **search for products**, so that **I can find the product I am looking for easily**
+    * [US#20](https://github.com/SerJosh/Yugen/issues/20) View Products by Category - As a **user**, view all products belonging to a set category **capability**, so that **I can compare those products easily with each other and see what options are available**
 
 <br>
 
-6. 
+6. Shopping Cart
+    * [US#22](https://github.com/SerJosh/Yugen/issues/22) Add to Cart - As a **user**, I can **add products that I want to buy to my shopping cart**, so that **I can proceed to purchase them**
+    * [US#23](https://github.com/SerJosh/Yugen/issues/23) Edit Cart Contents - As a **user**, I can **adjust quantity of items in my cart**, so that **I can only proceed with the correct amount of products that I want to buy**
+    * [US#24](https://github.com/SerJosh/Yugen/issues/24) View Cart - As a **user**, I can **view the contents of my shopping cart**, so that **I can confirm the details prior to proceeding to purchase**
+    * [US#25](https://github.com/SerJosh/Yugen/issues/25) Proceed to Checkout - As a **user**, I can **progress to purchasing my items**, so that **I can complete my transaction**
 
 <br>
+
+7. Checkout
+    * [US#27](https://github.com/SerJosh/Yugen/issues/27) Payment - As a **user**, I can **use my credit card to make the purchase**, so that **I can pay for the purchase easily**
+    * [US#28](https://github.com/SerJosh/Yugen/issues/28) Fill out address details for checkout - As a **user**, I can **provide my details**, so that **I can complete my order**
+    * [US#29](https://github.com/SerJosh/Yugen/issues/29) Order Confirmation - As a **user**, I can **be taken to a confirmation page when my order is completed**, so that **it is clear my order has gone through**
+
 
 
 ### The Scope Plane
@@ -150,7 +240,23 @@ Arising from user stories
 ### The Structure Plane
 
 <br>
-User Story:
+User Story: Django Setup
+
+   As a Developer, I can set up Django and install the supporting libraries needed, so that I am ready to start development
+
+   Tasks
+   <ul>
+   <li>Install Django</li>
+   <li>Install dj_database_url psycopg2</li>
+   <li>Create a requirements.txt file</li>
+   <li>Install django-crispy-forms</li>
+   <li>Install Pillow</li>
+   <li>Install Django-allauth</li>
+   <li>Create new instance in Postgres SQL and connect database to code</li>
+   <li>Install Gunicorn</li>
+   <li>Create the Django project</li>
+   <li>Create the first app</li>
+   </ul>
 
 <br>
 
