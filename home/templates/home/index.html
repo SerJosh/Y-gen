@@ -13,15 +13,19 @@
 <div class="back0">
     <div class="container h-100">
         <div class="row h-100">
-            <div class="col-7 col-md-6 my-auto">
-                <h1 class="display-4 logo-font text-black">Text
-                </h1>
-                <h4 class="logo-font text-black my-1">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>
-                <div class="my-5">
-                    <h4>
-                        <a href="{% url 'products' %}"
-                            class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">shop now</a>
+            <div class="index-cover">
+                <div class="col-7 col-md-6 my-auto">
+
+                    <h3 class="display-4 logo-font text-black">Text
+                    </h3>
+                    <h4 class="logo-font text-black my-1">Free delivery on orders over ${{ free_delivery_threshold }}!
                     </h4>
+                    <div class="my-5">
+                        <h4>
+                            <a href="{% url 'products' %}"
+                                class="btn-welcome btn btn-lg rounded-0 text-uppercase py-3 text-white">shop now</a>
+                        </h4>
+                    </div>
                 </div>
             </div>
         </div>
@@ -30,13 +34,15 @@
 <div class="back">
     <div class="container h-100">
         <div class="row h-100">
-            <div class="col-7 col-md-6 my-auto">
-                <h1 class="display-4 logo-font text-black">Traditional
-                </h1>
-                <div class="my-5">
-                    <h4>
-                        <a href="" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">shop now</a>
-                    </h4>
+            <div class="index-cover">
+                <div class="col-7 col-md-6 my-auto">
+                    <h1 class="display-4 logo-font text-black">Traditional
+                    </h1>
+                    <div class="my-5">
+                        <h4>
+                            <a href="{% url 'products' %}?category=traditional" class="btn-welcome btn btn-lg rounded-0 text-uppercase py-3 text-white">shop now</a>
+                        </h4>
+                    </div>
                 </div>
             </div>
         </div>
@@ -45,13 +51,15 @@
 <div class="back2">
     <div class="container h-100">
         <div class="row h-100">
-            <div class="col-7 col-md-6 my-auto">
-                <h1 class="display-4 logo-font text-black">Modern
-                </h1>
-                <div class="my-5">
-                    <h4>
-                        <a href="" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">shop now</a>
-                    </h4>
+            <div class="index-cover">
+                <div class="col-7 col-md-6 my-auto">
+                    <h1 class="display-4 logo-font text-black">Modern
+                    </h1>
+                    <div class="my-5">
+                        <h4>
+                            <a href="{% url 'products' %}?category=modern" class="btn-welcome btn btn-lg rounded-0 text-uppercase py-3 text-white">shop now</a>
+                        </h4>
+                    </div>
                 </div>
             </div>
         </div>
@@ -60,13 +68,13 @@
 </div>
 <div class="back3">
     <div class="container h-100">
-        <div class="row h-100">
+        <div class="index-cover">
             <div class="col-7 col-md-6 my-auto">
                 <h1 class="display-4 logo-font text-black">Anime
                 </h1>
                 <div class="my-5">
                     <h4>
-                        <a href="" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">shop now</a>
+                        <a href="{% url 'products' %}?category=anime" class="btn-welcome btn btn-lg rounded-0 text-uppercase py-3 text-white">shop now</a>
                     </h4>
                 </div>
             </div>
@@ -76,16 +84,18 @@
 <div class="back4">
     <div class="container h-100">
         <div class="row h-100">
-            <div class="col-7 col-md-6 my-auto">
-                <h1 class="display-4 logo-font text-black">Competition
-                    <div class="my-5">
-                        <h4>
-                            <a href="" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Apply now</a>
-                        </h4>
-                    </div>
+            <div class="index-cover">
+                <div class="col-7 col-md-6 my-auto">
+                    <h1 class="display-4 logo-font text-black">Competition
+                        <div class="my-5">
+                            <h4>
+                                <a href="" class="btn-welcome btn btn-lg rounded-0 text-uppercase py-3 text-white">Apply
+                                    now</a>
+                            </h4>
+                        </div>
+                </div>
             </div>
         </div>
-    </div>
 
-</div>
-{% endblock %}
+    </div>
+    {% endblock %}
