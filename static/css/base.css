@@ -53,21 +53,21 @@ header {
 /* Home page */
 
 .back0 {
-    background: url('/media/jap-2.jpg') no-repeat center center;
+    background: url(https://res.cloudinary.com/dkbfmfd5z/image/upload/v1718212017/image_6483441_5_aopngw.jpg) no-repeat center center;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
 }
 
 .back {
-    background: url('/media/jap-1.jpg') no-repeat center center;
+    background: url(https://res.cloudinary.com/dkbfmfd5z/image/upload/v1718211759/wave_rk8wjn.jpg) no-repeat center center;
     background-size: cover;
     height: 100vh;
     border:5px solid #000000; padding:3px; margin:5px
 }
 
 .back2 {
-    background: url('/media/jap-12.jpg') no-repeat center center;
+    background: url(https://res.cloudinary.com/dkbfmfd5z/image/upload/v1718211877/image_6483441_3_etwzz2.jpg) no-repeat center center;
     background-size: cover;
     height: 100vh;
     border:5px solid #000000; padding:3px; margin:5px
