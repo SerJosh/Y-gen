@@ -203,8 +203,6 @@ These are the user stories that were completed for the project, by Epic.
     * [US#28](https://github.com/SerJosh/Yugen/issues/28) Fill out address details for checkout - As a **user**, I can **provide my details**, so that **I can complete my order**
     * [US#29](https://github.com/SerJosh/Yugen/issues/29) Order Confirmation - As a **user**, I can **be taken to a confirmation page when my order is completed**, so that **it is clear my order has gone through**
 
-
-
 ### The Scope Plane
 
 <br>
