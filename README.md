@@ -136,6 +136,16 @@ XX Epics were created which were then further developed into XX User Stories. Th
    2. Fill out address details for checkout
    3. Order Confirmation
 
+8. Checkout [#30](https://github.com/SerJosh/Yugen/issues/30)
+
+   As a **user**, I can **create and maintain an account**, so that **I can order products quickly and easily without having to enter information each time**
+
+   #### Potential User Stories
+   1. Create User Profile / Account
+   2. Edit User Profile / Account
+   3. View User Profile / Account
+   4. Delete User Profile / Account
+
 
 ### User Stories
 
@@ -202,6 +212,14 @@ These are the user stories that were completed for the project, by Epic.
     * [US#27](https://github.com/SerJosh/Yugen/issues/27) Payment - As a **user**, I can **use my credit card to make the purchase**, so that **I can pay for the purchase easily**
     * [US#28](https://github.com/SerJosh/Yugen/issues/28) Fill out address details for checkout - As a **user**, I can **provide my details**, so that **I can complete my order**
     * [US#29](https://github.com/SerJosh/Yugen/issues/29) Order Confirmation - As a **user**, I can **be taken to a confirmation page when my order is completed**, so that **it is clear my order has gone through**
+
+<br>
+
+7. User Profile
+    * [US#31](https://github.com/SerJosh/Yugen/issues/31) Create Account - As a **user**, I can **create an account**, so that **I don’t have to enter my details every time I place an order**
+    * [US#32](https://github.com/SerJosh/Yugen/issues/32) Edit Account - As a **user**, I can **edit the details/address stored on my account**, so that **If I move, I can change my details**
+    * [US#33](https://github.com/SerJosh/Yugen/issues/33) View Account - As a **user**, I can **view the details stored on my account**, so that **I can review what is stored**
+    * [US#34](https://github.com/SerJosh/Yugen/issues/34) Delete Account - As a **user**, I can **delete my account**, so that **I have full control over the information that is stored about me**
 
 ### The Scope Plane
 
