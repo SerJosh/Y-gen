@@ -1,1 +1,1 @@
-web: gunicorn yugen.wsgi
+web: gunicorn yugen.wsgi:application
