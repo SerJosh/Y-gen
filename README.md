@@ -348,41 +348,51 @@ Heading
 
 <br>
 
-#### Keyword Research
+#### Keywords
 
 
 <br>
 
-[Keyword Research - ]()
+* japanese-artworks
 
 <br>
 
-[Keyword Research - ]()
+* japanese-merchandise 
 
 <br>
 
-[Keyword Research - ]()
+* japanese-inspired-gifts
 
 <br>
 
-[Keyword Research - ]()
+* japanese-gifts
 
 <br>
 
-[Keyword Research - ]()
+* anime-artworks 
 
 <br>
 
-[Keyword Research - ]()
+* modern-japanese-artworks
 
 <br>
 
-[Keyword Research - ]()
+* traditional-japanese-arworks 
 
 <br>
 
+* anime-decoration
 
 <br>
+
+* buy-japanese-artwork-decoration
+
+<br>
+
+* gifts-for-anime-lovers
+
+<br>
+
 
 From this research a refined keyword list was cultivated for use with the short-tail keywords within the head meta tags and for content through out the site. However this only formed a small part of the overall strategy for the sites SEO strategy.
 
