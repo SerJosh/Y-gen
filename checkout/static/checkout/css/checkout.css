@@ -1,3 +1,7 @@
+.picture-whole {
+    margin-top: 180px;
+}
+
 .StripeElement,
 .stripe-style-input {
   box-sizing: border-box;
@@ -64,4 +68,18 @@ select option[value=""] {
     justify-content: center;
     margin: 0;
     height: 100%;
+}
+
+/* Media Queries */
+
+@media (max-width: 991px) {
+    .picture-whole {
+        margin-top: 120px;
+    }
+}
+
+@media screen and (max-width: 408px) {
+    .picture-whole {
+        margin-top: 160px;
+    }
 }

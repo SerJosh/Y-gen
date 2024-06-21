@@ -8,7 +8,10 @@ p {
     font-family: Urbanist, sans-serif;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: Sedan SC, sans-serif;
 }
 
@@ -31,21 +34,21 @@ h1, h2, h3, h4 {
 
 .symbol {
     font-family: Cactus Classical Serif, sans-serif;
-    font-size:35px;
-    font-weight: 400; 
+    font-size: 35px;
+    font-weight: 400;
 }
 
 header {
-    border:5px solid #000000; margin:5px;
+    border: 5px solid #000000;
     background-color: rgba(211, 211, 211, 0.5);
 }
 
 .head-layover {
-    background-color: rgba(211, 211, 211, 0.9); 
+    background-color: rgba(211, 211, 211, 0.9);
 }
 
 .log-head {
-    border:5px solid #000000; margin:0px;
+    border: 5px solid #000000;
     background-color: rgba(211, 211, 211, 0.9);
 }
 
@@ -55,43 +58,54 @@ header {
 .back0 {
     background: url(https://res.cloudinary.com/dkbfmfd5z/image/upload/v1718212017/image_6483441_5_aopngw.jpg) no-repeat center center;
     background-size: cover;
-    height: calc(100vh - 164px);
+    height: 100vh;
     color: #555;
+    margin-top: 150px;
 }
 
 .back {
-    background: url(https://res.cloudinary.com/dkbfmfd5z/image/upload/v1718222883/wave-7705527_1280_pugtsr.png) no-repeat center center;
+    background: url(https://res.cloudinary.com/dkbfmfd5z/image/upload/v1719009878/IMG_2200_nwhor9.jpg) no-repeat center center;
     background-size: cover;
     height: 100vh;
-    border:5px solid #000000; padding:3px; margin:5px
+    border: 5px solid #000000;
+    padding: 3px;
+    margin: 5px
 }
 
 .back2 {
     background: url(https://res.cloudinary.com/dkbfmfd5z/image/upload/v1718211877/image_6483441_3_etwzz2.jpg) no-repeat center center;
     background-size: cover;
     height: 100vh;
-    border:5px solid #000000; padding:3px; margin:5px
+    border: 5px solid #000000;
+    padding: 3px;
+    margin: 5px
 }
 
 .back3 {
-    background: url('/media/jap-6.jpg') no-repeat center center;
+    background: url(https://res.cloudinary.com/dkbfmfd5z/image/upload/v1719009985/IMG_2238_jtxpyg.jpg) no-repeat center center;
     background-size: cover;
     height: 100vh;
-    border:5px solid #000000; padding:3px; margin:5px
+    border: 5px solid #000000;
+    padding: 3px;
+    margin: 5px
 }
 
 .back4 {
-    background: url('/media/jap-8.jpg') no-repeat center center;
+    background: url(https://res.cloudinary.com/dkbfmfd5z/image/upload/v1719010155/jap-8_zaegrk.jpg) no-repeat center center;
     background-size: cover;
     height: 100vh;
-    border:5px solid #000000; padding:3px; margin:5px
+    border: 5px solid #000000;
+    padding: 3px;
+    margin: 5px
 }
 
 .back5 {
     background: url('/media/jap-11.jpg') no-repeat center center;
     background-size: cover;
     height: 100vh;
-    border:5px solid #000000; padding:3px; margin:5px
+    border: 5px solid #000000;
+    padding: 3px;
+    margin: 5px
 }
 
 .index-cover {
@@ -104,11 +118,16 @@ header {
 /* Gallery */
 
 .img-border {
-    border:1px solid #000000; margin:5px
+    border: 1px solid #000000;
+    margin: 5px
 }
 
 .pic-title {
     font-family: Sedan SC, sans-serif;
+}
+
+.picture-whole {
+    margin-top: 180px;
 }
 
 
@@ -123,8 +142,8 @@ header {
 }
 
 .foot-color {
-    background-color:rgba(211, 211, 211, 0.9);
-    border:5px solid #000000; 
+    background-color: rgba(211, 211, 211, 0.9);
+    border: 5px solid #000000;
 }
 
 
@@ -204,7 +223,7 @@ header {
     background: #fff;
     clear: left;
     font: 14px Helvetica, Arial, sans-serif;
-    width: 600px;
+    width: 300px;
 }
 
 
@@ -299,10 +318,10 @@ header {
 }
 
 .arrow-up {
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-left: 4px solid transparent;
-    border-right: 4px solid transparent; 
+    border-right: 4px solid transparent;
     border-bottom: 10px solid black;
     position: absolute;
     top: -10px;
@@ -347,14 +366,18 @@ header {
     overflow-y: auto;
 }
 
+/*bag*/
+
+
+
 
 
 /* Media Queries */
 
 @media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
+    .container {
+        max-width: 80%;
+    }
 }
 
 @media (min-width: 992px) {
@@ -365,24 +388,19 @@ header {
         left: 0;
         z-index: 1030;
     }
-
-@media (max-width: 991px) {
-    .header-container {
-        padding-top: 116px;
-    }
-
-    body {
-        height: calc(100vh - 116px);
-    }
 }
 
-    .header-container {
-        padding-top: 154px;
+@media (max-width: 991px) {
+    body {
+        height: calc(100vh - 115px);
     }
 
-    .header-container-lg {
-        padding-top: 14px;
-        padding-right: 100%
+    .back0 {
+        margin-top: 80px;
+    }
+
+    .picture-whole {
+        margin-top: 120px;
     }
 }
 
@@ -429,6 +447,20 @@ header {
         font-size: small;
         width: 18rem;
     }
+
+    .index-cover {
+        height: 15rem;
+        width: 20rem;
+        margin-top: 2rem;
+    }
+
+    .logo-font {
+        font-size: 30px;
+    }
+
+    .btn-welcome {
+        font-size: 10px;
+    }
 }
 
 
@@ -447,3 +479,26 @@ header {
         height: 30rem;
     }
 }
+
+@media screen and (max-width: 408px) {
+    .back0 {
+        margin-top: 154px;
+    }
+
+    .picture-whole {
+        margin-top: 160px;
+    }
+
+    .index-cover {
+        height: 10rem;
+        width: 15rem;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .bag-response {
+        font-size: 15px;
+    }
+}
+

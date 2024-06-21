@@ -1,3 +1,7 @@
+.picture-whole {
+    margin-top: 180px;
+}
+
 .order-history {
     max-height: 416px;
     overflow-y: auto;
@@ -18,4 +22,18 @@
 
 #id_default_country option:first-child {
     color: #aab7c4;
+}
+
+/* Media Queries */
+
+@media (max-width: 991px) {
+    .picture-whole {
+        margin-top: 120px;
+    }
+}
+
+@media screen and (max-width: 408px) {
+    .picture-whole {
+        margin-top: 160px;
+    }
 }
