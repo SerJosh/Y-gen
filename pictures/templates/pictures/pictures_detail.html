@@ -74,13 +74,27 @@
                                 </div>
                             </div>
                             <div class="col-12">
-                                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
+                                {% if request.user.is_authenticated %}
+
+                                {% if fav %}
+                                <a href="{% url 'favourite_add' product.id %}"
+                                    class="btn btn-outline-black rounded-0"><span class="text-uppercase">Remove from
+                                        Favourites</span></a>
+                                {% else %}
+                                <a href="{% url 'favourite_add' product.id %}"
+                                    class="btn btn-outline-black rounded-0"><span class="text-uppercase">Add to
+                                        Favourites</span></a>
+                                {% endif %}
+                            </div>
+                            {% endif %}
+                            <div class="col-12">
+                                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-3">
                                     <span class="icon">
                                         <i class="fas fa-chevron-left"></i>
                                     </span>
                                     <span class="text-uppercase">Keep Shopping</span>
                                 </a>
-                                <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5"
+                                <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-3"
                                     value="Add to Bag">
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">

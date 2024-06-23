@@ -1,9 +1,27 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, HttpResponseRedirect
 from django.contrib import messages
 from .models import UserProfile
 from .forms import UserProfileForm
 from checkout.models import Order
+from pictures.models import Product
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.models import User
+
+@ login_required
+def favourite_add(request, id):
+    product = get_object_or_404(Product, id=id)
+    if product.favourites.filter(id=request.user.id).exists():
+        product.favourites.remove(request.user)
+    else:
+        product.favourites.add(request.user)
+    return HttpResponseRedirect(request.META['HTTP_REFERER'])
+
+@ login_required
+def favourite_list(request):
+    new = Product.objects.filter(favourites=request.user)
+    return render(request,
+                  'profiles/favourites.html',
+                  {'new': new})
 
 
 @login_required

@@ -64,8 +64,14 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
 
+    fav = bool
+
+    if product.favourites.filter(id=request.user.id).exists():
+        fav = True
+
     context = {
         'product': product,
+        'fav': fav,
     }
 
     return render(request, 'pictures/pictures_detail.html', context)
