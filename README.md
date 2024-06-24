@@ -7,7 +7,7 @@ Yugen is a website built on Django using Python, JavaScript, HTML and CSS. The s
 
 ![Screenshot of homepage]()
 
-[View the live website on Heroku](https://yugen-8b9d8c6f3a88.herokuapp.com/)
+[View the live website on Heroku]()
 
 Please note: To open any links in this document in a new browser tab, please press CTRL + Click.
 
@@ -146,6 +146,24 @@ XX Epics were created which were then further developed into XX User Stories. Th
    3. View User Profile / Account
    4. Delete User Profile / Account
 
+9. Product Management [#35](https://github.com/SerJosh/Yugen/issues/35)
+
+   As a **Site Owner**,  I would like **employees to be able to manage the products on the site easily, so that it is easy to keep the site up to date**
+
+   #### Potential User Stories
+   1. Add products
+   2. Edit Products
+   3. Delete Products
+
+10. Custom Models [#39](https://github.com/SerJosh/Yugen/issues/39)
+
+   As a **user and site owner**, I can **have multiple uses to interact with on the site**, so that **I can customize and engage with the website**
+
+   #### Potential User Stories
+   1. Favorites
+   2. Reviews
+   3. Headline update
+
 
 ### User Stories
 
@@ -215,11 +233,25 @@ These are the user stories that were completed for the project, by Epic.
 
 <br>
 
-7. User Profile
+8. User Profile
     * [US#31](https://github.com/SerJosh/Yugen/issues/31) Create Account - As a **user**, I can **create an account**, so that **I don’t have to enter my details every time I place an order**
     * [US#32](https://github.com/SerJosh/Yugen/issues/32) Edit Account - As a **user**, I can **edit the details/address stored on my account**, so that **If I move, I can change my details**
     * [US#33](https://github.com/SerJosh/Yugen/issues/33) View Account - As a **user**, I can **view the details stored on my account**, so that **I can review what is stored**
     * [US#34](https://github.com/SerJosh/Yugen/issues/34) Delete Account - As a **user**, I can **delete my account**, so that **I have full control over the information that is stored about me**
+
+<br>
+
+9. Product Management
+    * [US#36](https://github.com/SerJosh/Yugen/issues/36) Add Products - As an **Store Owner**, I would like **employees to be able to add new products to the site easily**, so that **the site can be kept up to date**
+    * [US#37](https://github.com/SerJosh/Yugen/issues/37) Delete Products - As a **Store Owner**, I would like **employees to be able to remove product details from the site**, so that **we can remove no longer available products from the site**
+    * [US#38](https://github.com/SerJosh/Yugen/issues/39) Edit Products - As a **Store Owner**, I would **like employees to be able to edit product details on the site easily**, so that **any corrections needed can be carried out when required**
+
+<br>
+
+10. Custom Models
+    * [US#40](https://github.com/SerJosh/Yugen/issues/40) Favorites - As a **user**, I can **choose my favorites from the products**, so that **I can buy them later**
+    * [US#41](https://github.com/SerJosh/Yugen/issues/41) Reviews - As a **user**, I can **add review to products**, so that **I can give my thoughts on the product**
+    * [US#42](https://github.com/SerJosh/Yugen/issues/42) Headline Update - As a **site owner**, I can **edit the text content on the landing page**, so that **I can let user know new information**
 
 ### The Scope Plane
 
