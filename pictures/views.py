@@ -1,10 +1,12 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
-from .models import Product, Category
+from .models import Product, Category, Review
 from django.db.models.functions import Lower
 from .forms import ProductForm
 from django.contrib.auth.decorators import login_required
+from .forms import NewReviewForm
+from django.http import HttpResponseRedirect
 
 # Create your views here.
 
@@ -63,18 +65,70 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
-
     fav = bool
+
+    queryset = Product.objects
+    product = get_object_or_404(queryset, pk=product_id)
+    reviews = product.reviews.all()
+    review_count = product.reviews.count()
 
     if product.favourites.filter(id=request.user.id).exists():
         fav = True
 
+    if request.method == "POST":
+        review_form = NewReviewForm(data=request.POST)
+        if review_form.is_valid():
+            review = review_form.save(commit=False)
+            review.name = request.user
+            review.product = product
+            review.save()
+            messages.add_message(
+                request, messages.SUCCESS,
+                'Review submitted!'
+            )
+
+    review_form = NewReviewForm()
+
     context = {
         'product': product,
         'fav': fav,
+        "product": product,
+        "reviews": reviews,
+        "review_count": review_count,
+        "review_form": review_form,
     }
 
     return render(request, 'pictures/pictures_detail.html', context)
+
+
+# Edit Comment
+# def review_edit(request, review_id):
+    
+#     if request.method == "POST":
+
+#         queryset = Product.objects
+#         product = get_object_or_404(queryset, review_id)
+#         review = get_object_or_404(Review, pk=review_id)
+#         review_form = NewReviewForm(data=request.POST, instance=review)
+
+#         if review_form.is_valid() and review.author == request.user:
+#             review = comment_form.save(commit=False)
+#             review.product = product
+#             review.approved = False
+#             review.save()
+#             messages.add_message(request, messages.SUCCESS, 'Review Updated!')
+#         else:
+#             messages.add_message(request, messages.ERROR,
+#                                  'Error updating review!')
+
+#     return HttpResponseRedirect(request.META['HTTP_REFERER'])
+
+
+# Delete Comment
+def delete_review(request, review_id):
+    review_delete = Review.objects.get(pk=review_id)
+    review_delete.delete()
+    return HttpResponseRedirect(request.META['HTTP_REFERER'])
 
 
 @login_required
@@ -143,3 +197,35 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+
+def review_detail(request, product_id):
+
+    queryset = Product.objects
+    product = get_object_or_404(queryset, pk=product_id)
+    reviews = product.reviews.all()
+    review_count = product.reviews.count()
+    if request.method == "POST":
+        review_form = NewReviewForm(data=request.POST)
+        if review_form.is_valid():
+            review = review_form.save(commit=False)
+            review.name = request.user
+            review.product = product
+            review.save()
+            messages.add_message(
+                request, messages.SUCCESS,
+                'Comment submitted and awaiting approval'
+            )
+
+    review_form = NewReviewForm()
+
+    context = {
+            "product": product,
+            "reviews": reviews,
+            "review_count": review_count,
+            "review_form": review_form
+    }
+
+    return render(
+        request,
+        "pictures/pictures_detail.html", context)

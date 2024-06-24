@@ -104,10 +104,72 @@
             </div>
         </div>
     </div>
-</div>
-{% endblock %}
+    <!--Comments-->
+    <div class="row">
+        <div class="col-md-8  card mb-4 mt-3 log-head ">
+            <h3>Reviews:</h3>
+            <div class="card-body">
+                {% for review in reviews %}
+                <div class="p-2">
+                    <p class="font-weight-bold">
+                        Review by {{ review.name }}
+                    </p>
+                    <div id="review{{ review.id }}">
+                        {{ review.content | linebreaks }}
+                    </div>
+                    {% if user.is_authenticated and review.name == user %}
+                    <a href="{% url 'delete-review' review.id %}" class="btn btn-outline-black rounded-0"
+                        data-comment_id=""><span class="text-uppercase">Delete</span></a>
+                    <a href="#" class="btn btn-outline-black rounded-0 " data-comment_id=""><span
+                            class="text-uppercase">Edit</span></a>
+                    {% endif %}
+                </div>
+                <hr>
+                <!-- Our for loop ends here -->
+                {% endfor %}
+            </div>
+        </div>
+        <div class="col-md-4 card mb-4 mt-3 ">
+            <div class="card-body log-head">
+                {% if user.is_authenticated %}
+                <h3>Leave a review:</h3>
+                <p>Posting as: {{ user.username }}</p>
+                <form id="reviewForm" method="post" style="margin-top: 1.3em;">
+                    {{ review_form | crispy }}
+                    {% csrf_token %}
+                    <button id="submitButton" type="submit" class="btn btn-black rounded-0 text-uppercase mt-3">Submit</button>
+                </form>
+                {% else %}
+                <p>Log in to leave a review</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
 
-{% block postloadjs %}
-{{ block.super }}
-{% include 'pictures/includes/quantity_input_script.html' %}
-{% endblock %}
+    <!-- <div class="col-md-7">
+    {% with reviews.count as total_reviews %}
+    <h2>
+    {{ total_reviews }} review{{ total_reviews|pluralize }}
+    </h2>
+    {% endwith %}
+    {% for review in reviews %}
+      Review {{ forloop.counter }} by {{ review.name }}
+      {{ review.content|linebreaks }}
+    {% empty %}
+      <p>There are no reviews for this post.</p>
+    {% endfor %}
+      <h2>Make a new review</h2>
+
+    <form id="myForm" method="post">
+    {{ review_form.as_p }}
+    {% csrf_token %}
+    <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+    </form>
+
+</div> -->
+    {% endblock %}
+
+    {% block postloadjs %}
+    {{ block.super }}
+    {% include 'pictures/includes/quantity_input_script.html' %}
+    {% endblock %}
