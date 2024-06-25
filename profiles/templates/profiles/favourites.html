@@ -20,44 +20,37 @@
                 <hr>
             </div>
         </div>
-
+        <!-- Display Favorites -->
         <div class="row">
             <div class="col">
                 <div class="table-responsive rounded">
                     <table class="table table-sm table-borderless">
-                        <!-- <thead class="text-black">
-                            <tr>
-                                <th scope="col">Product Info</th>
-                                <th scope="col">Price</th>
-                            </tr>
-                        </thead> -->
-
                         {% for product in new %}
                         <tr>
                             <td class="p-3 w-25">
                                 {% if product.image %}
-                                <a href="{% url 'product_detail' product.id %}" >
-                                <img class="img-fluid rounded " src="{{ product.image.url }}" alt="{{ product.name }}">
-                            </a>
+                                <a href="{% url 'product_detail' product.id %}">
+                                    <img class="img-fluid rounded " src="{{ product.image.url }}"
+                                        alt="{{ product.name }}">
+                                </a>
                                 {% else %}
                                 <img class="img-fluid rounded " src="/media/noimage.png" alt="{{ item.product.name }}">
                                 {% endif %}
                             </td>
                             <td class="py-3">
                                 <p class="my-0"><strong>{{ product.name }}</strong></p>
-                                <p class="my-0 small text-muted">SKU: {{ product.sku|upper }}</p>
                             </td>
                             <td class="py-3">
                                 <p class="my-0">${{ product.price }}</p>
                             </td>
                             <td class="py-3">
-                            <div id="favourite-section" class="col-12">
-                                <a href="{% url 'favourite_add' product.id %}"
-                                    class="btn btn-outline-black rounded-0"><span class="text-uppercase">Remove</span></a>
-                            </div>
-                        </td>
+                                <div id="favourite-section" class="col-12">
+                                    <a href="{% url 'favourite_add' product.id %}"
+                                        class="btn btn-outline-black rounded-0"><span
+                                            class="text-uppercase">Remove</span></a>
+                                </div>
+                            </td>
                         </tr>
-
                         {% endfor %}
                     </table>
                 </div>

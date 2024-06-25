@@ -18,6 +18,7 @@ class Category(models.Model):
 
 
 class Product(models.Model):
+    """A product model for details of the product"""
     category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
     sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)
@@ -32,7 +33,7 @@ class Product(models.Model):
         return self.name
 
 class Review(models.Model):
-
+    """A review model for reviews"""
     product = models.ForeignKey(Product,
                              on_delete=models.CASCADE,
                              related_name='reviews')

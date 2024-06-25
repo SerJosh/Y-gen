@@ -62,7 +62,7 @@ def all_products(request):
 
 
 def product_detail(request, product_id):
-    """ A view to show individual product details """
+    """ A view to show individual product details and reviews """
 
     product = get_object_or_404(Product, pk=product_id)
     fav = bool
@@ -101,31 +101,8 @@ def product_detail(request, product_id):
     return render(request, 'pictures/pictures_detail.html', context)
 
 
-# Edit Comment
-# def review_edit(request, review_id):
-    
-#     if request.method == "POST":
-
-#         queryset = Product.objects
-#         product = get_object_or_404(queryset, review_id)
-#         review = get_object_or_404(Review, pk=review_id)
-#         review_form = NewReviewForm(data=request.POST, instance=review)
-
-#         if review_form.is_valid() and review.author == request.user:
-#             review = comment_form.save(commit=False)
-#             review.product = product
-#             review.approved = False
-#             review.save()
-#             messages.add_message(request, messages.SUCCESS, 'Review Updated!')
-#         else:
-#             messages.add_message(request, messages.ERROR,
-#                                  'Error updating review!')
-
-#     return HttpResponseRedirect(request.META['HTTP_REFERER'])
-
-
-# Delete Comment
 def delete_review(request, review_id):
+    """ A view to delete reviews """
     review_delete = Review.objects.get(pk=review_id)
     review_delete.delete()
     return HttpResponseRedirect(request.META['HTTP_REFERER'])

@@ -4,7 +4,6 @@
 <html lang="en">
 
 <head>
-
     {% block meta %}
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta charset="utf-8">
@@ -61,10 +60,10 @@
             </div>
             <div class="col-12 col-lg-8 my-auto py-1 py-lg-0 ">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
-                    <!-- search -->
+                    <!-- Search -->
                     <li class="list-inline-item">
-                        <a class="text-black nav-link " href="#" id="mobile-search" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
+                        <a class="text-black nav-link " id="mobile-search" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
                             <div class="text-center">
                                 <div><i class="fas fa-search fa-lg"></i></div>
                                 <p class="my-0">Search</p>
@@ -88,7 +87,7 @@
                             </form>
                         </div>
                     </li>
-                    <!-- my account -->
+                    <!-- My Account -->
                     <li class="list-inline-item dropdown">
                         <a class="text-black nav-link" id="user-options" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
@@ -116,7 +115,7 @@
                             {% endif %}
                         </div>
                     </li>
-                    <!-- Shopping cart -->
+                    <!-- Shopping Cart -->
                     <li class="list-inline-item">
                         <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
                             href="{% url 'view_bag' %}">
@@ -176,7 +175,7 @@
         $('.toast').toast('show');
     </script>
     {% endblock %}
-
+    <!-- Footer -->
     <footer class="footer mt-auto py-3 foot-color">
         <p class="m-0 text-center text-black copyright">
             {% block copyright %}

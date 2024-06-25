@@ -9,6 +9,7 @@ from django.contrib.auth.models import User
 
 @ login_required
 def favourite_add(request, id):
+    """Add Product to Favorites"""
     product = get_object_or_404(Product, id=id)
     if product.favourites.filter(id=request.user.id).exists():
         product.favourites.remove(request.user)
@@ -18,6 +19,7 @@ def favourite_add(request, id):
 
 @ login_required
 def favourite_list(request):
+    """Display Product to Favorites"""
     new = Product.objects.filter(favourites=request.user)
     return render(request,
                   'profiles/favourites.html',
@@ -50,6 +52,7 @@ def profile(request):
     return render(request, template, context)
 
 def order_history(request, order_number):
+    """ Display the user's order history. """
     order = get_object_or_404(Order, order_number=order_number)
 
     messages.info(request, (

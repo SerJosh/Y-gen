@@ -13,6 +13,7 @@
 <div class="picture-whole">
     <div class="container-fluid">
         <div class="row">
+            <!-- Product Information -->
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
                 <div class="image-container my-5">
                     {% if product.image %}
@@ -20,7 +21,7 @@
                         <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                     </a>
                     {% else %}
-                    <a href="">
+                    <a>
                         <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                     </a>
                     {% endif %}
@@ -74,16 +75,16 @@
                                 </div>
                             </div>
                             <div class="col-12">
+                                <!-- Favorites -->
                                 {% if request.user.is_authenticated %}
-
                                 {% if fav %}
                                 <a href="{% url 'favourite_add' product.id %}"
                                     class="btn btn-outline-black rounded-0"><span class="text-uppercase">Remove from
-                                        Favourites</span></a>
+                                        Favorites</span></a>
                                 {% else %}
                                 <a href="{% url 'favourite_add' product.id %}"
                                     class="btn btn-outline-black rounded-0"><span class="text-uppercase">Add to
-                                        Favourites</span></a>
+                                        Favorites</span></a>
                                 {% endif %}
                             </div>
                             {% endif %}
@@ -104,7 +105,7 @@
             </div>
         </div>
     </div>
-    <!--Comments-->
+    <!--Reviews-->
     <div class="row">
         <div class="col-md-8  card mb-4 mt-3 log-head ">
             <h3>Reviews:</h3>
@@ -125,7 +126,6 @@
                     {% endif %}
                 </div>
                 <hr>
-                <!-- Our for loop ends here -->
                 {% endfor %}
             </div>
         </div>
@@ -137,7 +137,8 @@
                 <form id="reviewForm" method="post" style="margin-top: 1.3em;">
                     {{ review_form | crispy }}
                     {% csrf_token %}
-                    <button id="submitButton" type="submit" class="btn btn-black rounded-0 text-uppercase mt-3">Submit</button>
+                    <button id="submitButton" type="submit"
+                        class="btn btn-black rounded-0 text-uppercase mt-3">Submit</button>
                 </form>
                 {% else %}
                 <p>Log in to leave a review</p>
@@ -145,28 +146,6 @@
             </div>
         </div>
     </div>
-
-    <!-- <div class="col-md-7">
-    {% with reviews.count as total_reviews %}
-    <h2>
-    {{ total_reviews }} review{{ total_reviews|pluralize }}
-    </h2>
-    {% endwith %}
-    {% for review in reviews %}
-      Review {{ forloop.counter }} by {{ review.name }}
-      {{ review.content|linebreaks }}
-    {% empty %}
-      <p>There are no reviews for this post.</p>
-    {% endfor %}
-      <h2>Make a new review</h2>
-
-    <form id="myForm" method="post">
-    {{ review_form.as_p }}
-    {% csrf_token %}
-    <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
-    </form>
-
-</div> -->
     {% endblock %}
 
     {% block postloadjs %}

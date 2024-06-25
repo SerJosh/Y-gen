@@ -4,6 +4,7 @@ from django.shortcuts import get_object_or_404
 from pictures.models import Product
 
 def bag_contents(request):
+    """The contents in bag"""
 
     bag_items = []
     total = 0

@@ -11,7 +11,6 @@
 {% endblock %}
 
 {% block content %}
-
 <div class="picture-whole site-flex">
     <div class="container mb-2">
         <div class="row">
@@ -21,7 +20,6 @@
                 <hr>
             </div>
         </div>
-
         <div class="row">
             <div class="col bag-response">
                 {% if bag_items %}
@@ -30,14 +28,13 @@
                         <thead class="text-black">
                             <tr>
                                 <th scope="col">Product Info</th>
-                                <th scope="col"></th>
                                 <th scope="col">Price</th>
                                 <th scope="col">Qty</th>
                                 <th scope="col">Subtotal</th>
                             </tr>
                         </thead>
-
                         {% for item in bag_items %}
+                        <!-- Items in bag -->
                         <tr>
                             <td class="p-3 w-25">
                                 {% if item.product.image %}
@@ -49,7 +46,6 @@
                             </td>
                             <td class="py-3">
                                 <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                                <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
                             </td>
                             <td class="py-3">
                                 <p class="my-0">${{ item.product.price }}</p>
@@ -93,6 +89,7 @@
                             </td>
                         </tr>
                         {% endfor %}
+                        <!-- Buttons and Financial information -->
                         <tr>
                             <td colspan="5" class="pt-5 text-right">
                                 <h6><strong>Bag Total: ${{ total|floatformat:2 }}</strong></h6>
@@ -126,6 +123,7 @@
                     </table>
                 </div>
                 {% else %}
+                <!-- Empty Bag -->
                 <p class="lead mb-5">Your bag is empty.</p>
                 <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
                     <span class="icon">
@@ -138,7 +136,6 @@
         </div>
     </div>
 </div>
-
 {% endblock %}
 
 {% block postloadjs %}

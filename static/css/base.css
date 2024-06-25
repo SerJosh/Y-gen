@@ -370,11 +370,6 @@ header {
     overflow-y: auto;
 }
 
-/*bag*/
-
-
-
-
 
 /* Media Queries */
 
@@ -503,6 +498,10 @@ header {
 @media screen and (max-width: 360px) {
     .bag-response {
         font-size: 15px;
+    }
+
+    #mc_embed_signup {
+        width: 200px;
     }
 }
 

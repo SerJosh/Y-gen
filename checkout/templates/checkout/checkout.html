@@ -37,6 +37,7 @@
                     </div>
                 </div>
                 {% for item in bag_items %}
+                <!-- Items in Checkout -->
                 <div class="row">
                     <div class="col-2 mb-1">
                         <a href="{% url 'product_detail' item.product.id %}">
@@ -56,6 +57,7 @@
                     </div>
                 </div>
                 {% endfor %}
+                <!-- Financial Information -->
                 <hr class="my-0">
                 <div class="row text-black text-right">
                     <div class="col-7 offset-2">
@@ -70,6 +72,7 @@
                     </div>
                 </div>
             </div>
+            <!-- Payment Form -->
             <div class="col-12 col-lg-6">
                 <p class="text-muted">Please fill out the form below to complete your order</p>
                 <form action="{% url 'checkout' %}" method="POST" id="payment-form">
@@ -106,13 +109,11 @@
                         <legend class="fieldset-label small text-black px-2 w-auto">Payment</legend>
                         <!-- Stripe -->
                         <div class="mb-3" id="card-element"></div>
-
                         <!-- Used to display form errors -->
                         <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
                         <!-- Pass the client secret to the view so we can get the payment intent id -->
                         <input type="hidden" value="{{ client_secret }}" name="client_secret">
                     </fieldset>
-
                     <div class="submit-button text-right mt-5 mb-2">
                         <a href="{% url 'view_bag' %}" class="btn btn-outline-black rounded-0">
                             <span class="icon">

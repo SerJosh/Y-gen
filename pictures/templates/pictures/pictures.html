@@ -20,6 +20,7 @@
         </div>
         <div class="row">
             <div class="product-container col-10 offset-1">
+                <!-- Sorting -->
                 <div class="row mt-1 mb-2">
                     <div
                         class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
@@ -60,6 +61,7 @@
                     </div>
                 </div>
                 <div class="row">
+                    <!-- Products -->
                     {% for product in products %}
                     <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                         <div class="card h-100 border-0">
@@ -90,6 +92,7 @@
                                         </p>
                                         {% endif %}
                                         {% if request.user.is_superuser %}
+                                        <!-- For Admin -->
                                         <small class="ml-3">
                                             <a href="{% url 'edit_product' product.id %}">Edit</a> |
                                             <a class="text-danger"
@@ -102,6 +105,7 @@
                         </div>
                     </div>
                     {% if forloop.counter|divisibleby:1 %}
+                    <!-- Product Responsiveness -->
                     <div class="col-12 d-sm-none mb-5">
                         <hr>
                     </div>
