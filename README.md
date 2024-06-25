@@ -345,9 +345,9 @@ Arising from user stories
 <br>
 
 #### User Story: Deployment to Heroku
-    As a Developer, I want to deploy the app to Heroku, so that I can confirm everything works before development of the site.
+   As a Developer, I want to deploy the app to Heroku, so that I can confirm everything works before development of the site.
 
-    Tasks
+   Tasks
    <ul>
    <li>Update code for deployment</li>
    <li>Create new Heroku app</li>
@@ -358,9 +358,9 @@ Arising from user stories
 <br>
 
 #### User Story: Create a User Account
-    As a user, I would like to be able to create an account, so that I don’t have to enter my details every time I place an order
+   As a user, I would like to be able to create an account, so that I don’t have to enter my details every time I place an order
 
-    Acceptance Criteria
+   Acceptance Criteria
    <ul>
    <li>Given that I am an unregistered user
 And, I am on the user registration page
@@ -385,9 +385,9 @@ Then I have my address information ready to be used</li>
 
 #### User Story: Users must confirm their email
 
-    As a developer, I can make users confirm their email, so that I can keep my account secure
+   As a developer, I can make users confirm their email, so that I can keep my account secure
 
-    Acceptance Criteria
+   Acceptance Criteria
    <ul>
    <li>Given that a user wants to register
 When they fill in the details in the registration page
@@ -409,9 +409,9 @@ Then they will be able to access the site as a registered user</li>
 
 #### User Story: Users can reset their password
 
-    As a user I can reset my password so that if I forget it I can still access my account
+   As a user I can reset my password so that if I forget it I can still access my account
 
-    Acceptance Criteria
+   Acceptance Criteria
    <ul>
    <li>Given that I forgot by password
 When I try to login with an incorrect password
@@ -438,9 +438,9 @@ Then my password should not be reset</li>
 
 #### User Story: User Account Login / Logout
 
-    As a User, I can login or logout of my account, so that I can keep my account secure
+   As a User, I can login or logout of my account, so that I can keep my account secure
 
-    Acceptance Criteria
+   Acceptance Criteria
    <ul>
    <li>Given that I am a registered user, who is not logged in
 When I navigate to the sign in page
@@ -465,21 +465,607 @@ Then I can not access information which requires me to be signed in</li>
 
 <br>
 
-User Story:
+#### User Story: Add to Cart
+
+   As a user, I can add products that I want to buy to my shopping cart, so that I can proceed to purchase them
+
+   Acceptance Criteria
+   <ul>
+   <li>Given That I am an unregistered user
+When I find a product I want to purchase
+And, I click on add to cart
+Then the product is added to my shopping cart, ready for me to purchase</li>
+   <li>Given that I am a User,
+When I click add to cart on a product I have previously added to my cart
+Then The quantity of that product in my cart increases by the amount I just added</li>
+   </ul>
+
+   Tasks
+   <ul>
+   <li>Develop a shopping cart functionality to track products users want to purchase.</li>
+   <li> Enable the cart to be utilized when a user is logged in or not</li>
+   <li>Develop check on add to cart functionality for product already existing in cart – if product exists, increase quantity appropriately</li>
+   </ul>
 
 <br>
 
-User Story:
+#### User Story: Create nav-bar with relevant content for navigation
+
+   As a user, I can access and see the necessary content on the nav-bar, so that it is easily reachable and have control on every page
+
+   Acceptance Criteria
+   <ul>
+   <li>Given That I am a user on the website
+When I want to see my account information
+Then I can access it on the nav-bar on every page</li>
+   <li>Given That I am a user on the website
+When I want to see if I am logged in or not
+Then I can see it on the nav-bar</li>
+<li>Given That I am a user on the website
+When I am on any page
+Then I can access all the necessary content for a e-commerce website
+</li>
+   </ul>
+
+   Tasks
+   <ul>
+   <li>Create an account option with the necessary content</li>
+   <li> Display the username as logged in and "you are not logged in" if not</li>
+   <li>Display content required for filtering or links to all products</li>
+   <li>Display Facebook link for Facebook page</li>
+   <li>Display shopping cart to link to added products to shopping cart and add features to it (eg amount)</li>
+   </ul>
 
 <br>
 
-User Story:
+#### User Story: View Product Details
+
+   As a user, I can view the full details for a product, so that I can make an informed purchase decision
+
+   Acceptance Criteria
+   <ul>
+   <li>Given That I am a user on the site
+When I navigate to a product listing
+Then the full details of the product are available</li>
+   <li>Given That I am a user on the all products page
+When click on a product summary card
+Then I am taken to a page with the full details on the product</li>
+   </ul>
+
+   Tasks
+   <ul>
+   <li>Develop a product full details page template</li>
+   <li>Develop product card template</li>
+   <li>Link product card with product detail page</li>
+   </ul>
 
 <br>
 
-User Story:
+#### User Story: Product Search
+
+   As a user, I can search for products, so that I can find the product I am looking for easily
+
+   Acceptance Criteria
+   <ul>
+   <li>Given That I am a User
+When I am on the site
+Then I have easy access to search functionality</li>
+   <li>Given That I am a User
+When I search for a product by name
+Then the product appears in the search result</li>
+<li>Given That I am a User
+When I search for a product by category
+Then all the products in that category appear</li>
+   </ul>
+
+   Tasks
+   <ul>
+   <li>Develop search bar functionality that is easy to access on every page</li>
+   <li>Develop search query filter to search by product name</li>
+   <li>Develop search query filter to search by any keyword</li>
+   </ul>
 
 <br>
+
+#### User Story: View Products by Category
+
+   As a user, view all products belonging to a set category capability, so that I can compare those products easily with each other and see what options are available
+
+   Acceptance Criteria
+   <ul>
+   <li>Given that I am a user,
+When I want to quickly look at all product in a given category
+Then there is a link in the navigation bar to quickly access them</li>
+   <li>Given that I am a user,
+When click on the category link
+Then all the products related to that category are displayed</li>
+   </ul>
+
+   Tasks
+   <ul>
+   <li>Develop navigation links for each category of product</li>
+   <li>Develop query for each link to automatically apply filter to product results for each category to be used for the nav links.</li>
+   </ul>
+
+<br>
+
+#### User Story: Edit Cart Contents
+
+   As a user, I can adjust quantity of items in my cart, so that I can only proceed with the correct amount of products that I want to buy
+
+   Acceptance Criteria
+   <ul>
+   <li>Given That I am a User
+And, I have added products to my cart
+When I view the cart
+Then I can adjust the quantity of each item individually</li>
+   <li>Given That I am a User
+When I view the items in my cart
+Then have the ability to remove an item completely.</li>
+   </ul>
+
+   Tasks
+   <ul>
+   <li>Develop the ability to adjust the item quantity within the shopping cart</li>
+   <li>Develop the ability to remove items from the shopping cart</li>
+   </ul>
+
+<br>
+
+#### User Story: View Cart
+
+   As a user, I can view the contents of my shopping cart, so that I can confirm the details prior to proceeding to purchase
+
+   Acceptance Criteria
+   <ul>
+   <li>Given That I am a User
+When I click on my shopping cart
+Then I am taken to a page with the details of all the products I have within my cart</li>
+   <li>Given That I am a user
+When I add a product to my cart
+Then I have a visual confirmation that the product is now in my cart</li>
+   </ul>
+
+   Tasks
+   <ul>
+   <li> Develop template page for viewing the shopping cart</li>
+   <li>Develop temporary preview of shopping cart to display when adding products to the cart</li>
+   </ul>
+
+<br>
+
+#### User Story: Proceed to Checkout
+
+   As a user, I can progress to purchasing my items, so that I can complete my transaction
+
+   Acceptance Criteria
+   <ul>
+   <li>Given That I am a user
+When I have reviewed my shopping cart
+Then I have the option to proceed to purchase them</li>
+   <li>Given That I am a user
+When I have added products to my shopping cart
+Then I have the option to proceed to purchase, without having to confirm the details of the products within my cart</li>
+   </ul>
+
+   Tasks
+   <ul>
+   <li>Develop checkout link on shopping cart page</li>
+   <li>Develop checkout link on shopping cart preview</li>
+   </ul>
+
+<br>
+
+#### User Story: Fill out address details for checkout
+
+   As a user, I can provide my details, so that I can complete my order
+
+   Acceptance Criteria
+   <ul>
+   <li>Given that I am a User,
+When I proceed to checkout
+Then I am asked to enter my delivery and billing address</li>
+   <li>Given that I am a user,
+When I enter my billing address
+Then I can use the same address for delivery without having to fill it out twic</li>
+<li>Given that I am a logged in user,
+When I enter my address details,
+Then have the option to save the details I entered to my account</li>
+<li>Given that I am a logged in user,
+WhenI get to the enter billing and delivery address screen
+Then I have the option to use previously saved address(es) details</li>
+<li>Given hat I am a registered user, not logged in
+When I progress to enter the address information – I have the ability to login
+Then return to the same screen and use previously saved address details.</li>
+   </ul>
+
+   Tasks
+   <ul>
+   <li>Develop checkout page to collect billing and delivery address details</li>
+   <li>Enable option to use billing address for delivery address</li>
+   <li>Enable option for users to save address details to their account</li>
+   <li>Enable logged in users to select previously saved addresses instead of manual completion of the form</li>
+   </ul>
+
+<br>
+
+#### User Story: Payment
+
+   As a user, I can use my credit card to make the purchase, so that I can pay for the purchase easily
+
+   Acceptance Criteria
+   <ul>
+   <li>Given that I am a user
+When purchasing my items
+Then I have the ability to enter my credit card details on a secure form</li>
+   <li>Given that I am a user
+When I enter my card details to pay for the transaction
+Then the system will process the payment</li>
+<li>Given that I am a user
+When I process the payment using my card details
+Then I am kept informed as to the status as it progresses</li>
+<li>Given that I am a user
+WhenMy payment fails
+Then I am returned to the checkout page without losing all the inputted information</li>
+<li>Given that I am a user
+When I checkout and my payment is successful
+Then I am taken to a confirmation page</li>
+   </ul>
+
+   Tasks
+   <ul>
+   <li>Develop secure form to capture credit card details</li>
+   <li>Develop link to payment processor</li>
+   <li>Develop message system to keep customer informed of processing status</li>
+   <li>Develop redirect to appropriate page depending on payment outcome</li>
+   </ul>
+
+<br>
+
+#### User Story: Order Confirmation
+
+   As a user, I can be taken to a confirmation page when my order is completed, so that it is clear my order has gone through
+
+   Acceptance Criteria
+   <ul>
+   <li>Given that I am a user
+When I complete a checkout form and my payment is processed
+Then I can see confirmation of my order details</li>
+   <li>Given that I am a user
+When I complete a checkout form and my payment is processed
+Then I receive an email with the confirmation details</li>
+<li>Given that I am a user
+When I complete a checkout form and my payment is processed
+Then an order number is generated with which I can retrieve the order details</li>
+<li>Given That I am a registered user, logged in when I placed my order
+When I I have successfully completed my order
+Then the order appears in my orders of my account</li>
+   </ul>
+
+   Tasks
+   <ul>
+   <li>Develop an order confirmation page that the user redirects to on order completion.</li>
+   <li>Develop automated email confirming order – email to include link to order details page for that order and order number</li>
+   </ul>
+
+<br>
+
+#### User Story: Create Account
+
+   As a user, I can create an account, so that I don’t have to enter my details every time I place an order
+
+   Acceptance Criteria
+   <ul>
+   <li>Given that I am an unregistered user
+And, I am on the user registration page
+When I enter my email address and password
+And, I click on the register button
+Then the system creates me an account
+And, it tells me that my account has been created</li>
+   <li>Giventhat I have an account
+And, I have items in my cart
+WhenI navigate to checkout
+Then I have my address information ready to be used</li>
+   </ul>
+
+   Tasks
+   <ul>
+   <li>Develop the ability for users to register for an account</li>
+   <li>Develop ability for users to save details to their account such as address</li>
+   </ul>
+
+<br>
+
+#### User Story: Edit Account
+
+   As a user, I can edit the details/address stored on my account, so that If I move, I can change my details
+
+   Acceptance Criteria
+   <ul>
+   <li>Given that I have a user profile,
+And, I am logged into my profile
+When I navigate to my profile
+Then I have the ability to edit my address on my account</li>
+   <li>Given that I have a user profile,
+And, I am logged into my profile
+When I navigate to my profile
+Then I have the option to delete the address’s</li>
+   </ul>
+
+   Tasks
+   <ul>
+   <li>Develop the ability for users to save addresses to their profile</li>
+   <li>Develop the ability for users to edit the addresses on their profile</li>
+   <li>Develop the ability for users to delete the addresses on their profile</li>
+   </ul>
+
+<br>
+
+#### User Story: View Account
+
+   As a user, I can view the details stored on my account, so that I can review what is stored
+
+   Acceptance Criteria
+   <ul>
+   <li>Given that I have a user account
+When I am logged into my account
+Then I have an option to view my account</li>
+   <li>Given that I have a user account
+And, I am logged in
+When I navigate to view my details
+Then everything that is stored within my account is available to be viewed</li>
+   </ul>
+
+   Tasks
+   <ul>
+   <li>Develop a link in the menu that takes logged in users to their profile</li>
+   <li>Develop a link within the user profile page that they can use to view all other information associated with the account – previous orders, address details, etc.</li>
+   </ul>
+
+<br>
+
+#### User Story: Implementation of Responsive Design
+
+   As a user, I can easily navigate and view content, so that I can use any device, no matter what the screen size
+
+   Acceptance Criteria
+   <ul>
+   <li>Giventhat the user is visiting the site
+Whenthe user is using a different device
+Then the website automatically adjusts its content to accommodate for the screen size</li>
+   </ul>
+
+   Tasks
+   <ul>
+   <li>Use media queries to make content responsive up to 325px</li>
+   <li>when needed use bootstrap to make content responsive</li>
+   <li>test responsive content on mobile phone</li>
+   </ul>
+
+<br>
+
+#### User Story: Enhance the design of each page of the project
+
+   As a user, I can engage the content on each page of the website, so that I can understand the content on each page with it being easy on the eye
+
+   Acceptance Criteria
+   <ul>
+   <li>Given That I am a user and on a certain page
+When I am on that page looking at the content
+Then That it is easily readable and engaging</li>
+   </ul>
+
+   Tasks
+   <ul>
+   <li>Enhance the design of allauth pages</li>
+   <li>Enhance the design of the home page</li>
+   <li>Enhance the design of the pictures/products/gallery pages</li>
+   <li>Enhance the design of the bag page</li>
+   <li>Enhance the design of the checkout pages</li>
+   <li>Enhance the design of the profile page</li>
+   </ul>
+
+<br>
+
+#### User Story: Add Products
+
+   As an Store Owner, I would like employees to be able to add new products to the site easily, so that the site can be kept up to date
+
+   Acceptance Criteria
+   <ul>
+   <li>Given That I am an employee
+When I log into the site
+Then I should have additional stock management options available</li>
+   <li>Given That I am a logged in employee
+When I go to product management
+Then I should be directed to a form that allows me to add a new product to the site</li>
+<li>Given That I am a logged in employee And, I have completed the form to add a product
+When I submit the form
+Then the new product should appear on the site</li>
+   </ul>
+
+   Tasks
+   <ul>
+   <li>Develop a separate navigation bar for employee users to allow access to other site area</li>
+   <li>Develop a form for employees to add products to the site</li>
+   <li>Develop validation to ensure that product information is completed correctly</li>
+   </ul>
+
+<br>
+
+#### User Story: Delete Products
+
+   As a Store Owner, I would like employees to be able to remove product details from the site, so thatwe can remove no longer available products from the site
+
+   Acceptance Criteria
+   <ul>
+   <li>Given that I am an employee
+When I select a product to edit,
+Then I should have the option to remove it from yugen</li>
+   <li>Given that I am an employee
+When select a product to remove from the store
+Then I should also have the option to delete the product entirely</li>
+<li>Given that I am an employee
+When I have selected to delete a product entirely
+Then the product is removed from the database</li>
+   </ul>
+
+   Tasks
+   <ul>
+   <li>Develop an option in the product management to remove the product from the store</li>
+   <li>Restrict access to the option to employees only</li>
+   </ul>
+
+<br>
+
+#### User Story: Edit Products
+
+   As a Store Owner, I would like employees to be able to edit product details on the site easily, so that any corrections needed can be carried out when required
+
+   Acceptance Criteria
+   <ul>
+   <li>Given That I am an employee
+When I log into the site
+Then I should have the option to edit a product</li>
+   <li>Given That I am a logged in employee
+When I select which product to edit
+Then I am directed to a form from which I can edit the existing product data</li>
+<li>Given That I am a logged in employee
+When I edit product details within the form and submit the changes
+Then the changes I made appear on the site</li>
+   </ul>
+
+   Tasks
+   <ul>
+   <li>Develop the option for employees to edit products</li>
+   <li>Develop validation for the form to ensure product information is complete</li>
+   <li>Develop a form for employees to edit the product data</li>
+   </ul>
+
+<br>
+
+#### User Story: Favorites
+
+   As a user, I can choose my favorites from the products, so that I can buy them later
+
+   Acceptance Criteria
+   <ul>
+   <li>Given That i am a user
+When I see the list of products
+Then I can choose which one i want to put as favorites</li>
+   <li>Given That i am a user
+When I want to see my list of products
+Then I can go to a page to see my favorite</li>
+<li>Given That i am a user
+When I want to remove a product from my favorites
+Then There is a button letting me do so</li>
+   </ul>
+
+   Tasks
+   <ul>
+   <li>Implement a favorites page</li>
+   <li>Make each product with add to favorites/added to favorites</li>
+   <li>Develop function to delete product</li>
+   </ul>
+
+<br>
+
+#### User Story: Delete Account
+
+   As a user, I can delete my account, so that I have full control over the information that is stored about me
+
+   Acceptance Criteria
+   <ul>
+   <li>Given that I have a user account
+When I view my account details whilst logged in
+Then I have the option to delete my account.</li>
+   <li>Given that I have a user account
+And, I am on my account details page
+When I select to delete my account
+And, I confirm the deletion request
+Then My account is deleted.</li>
+   </ul>
+
+   Tasks
+   <ul>
+   <li>On the user profile page provide an option to delete account</li>
+   <li> require a second confirmation for account deletion</li>
+   <li>develop method to delete the account when the user requests it to be deleted – will need to keep order history separately for company records</li>
+   </ul>
+
+<br>
+
+#### User Story: home page content
+
+   As a user, I would like to see an engaging landing page, with an attractive hero image and a bigger picture of what the website has to offer, so that I can make more informative decisions in an engaging way
+
+   Acceptance Criteria
+   <ul>
+   <li>Given That I am on the landing page
+When I enter the site
+Then An enterprising and engaging image is displayed</li>
+   <li>Given That I am on the landing page
+When I enter the site
+Then I know immediately what I can do as it is displayed simply and descriptivel</li>
+<li>Given that I am on the landing page
+When I look into the landing page
+Then I know where I can go and what I can do</li>
+   </ul>
+
+   Tasks
+   <ul>
+   <li>Add Hero image and a shop now button for immediate action</li>
+   <li>Add niche product sections (divs) to give some insight into that particular product</li>
+   <li>Add necessary Information regarding the site that is display immediately(free delivery, sales, etc.)</li>
+   </ul>
+
+<br>
+
+#### User Story: Reviews
+
+   As a user, I can add review to products, so that I can give my thoughts on the product
+
+   Acceptance Criteria
+   <ul>
+   <li>Given That i am a user
+When I click add a review
+Then I can add text content to give a review.</li>
+   <li>Given That i am a user
+When I want to delete my review
+Then I have the ability to by clicking on delete</li>
+<li>Given That i am a user
+When I want to edit my comment
+Then I have the ability to by clicking on edit</li>
+   </ul>
+
+   Tasks
+   <ul>
+   <li>Add a reviews section under the product</li>
+   <li> Add Create/Edit/Delete functionality</li>
+   </ul>
+
+<br>
+
+#### User Story: Headline Update
+
+   As a site owner, I can edit the text content on the landing page, so that I can let user know new information
+
+   Acceptance Criteria
+   <ul>
+   <li>Given that i am a site owner
+When There is a notification/news i want users to know
+Then It is displayed on the home page</li>
+   <li>Given that i am a site owner
+When I want to edit the text content
+Then I can go to a page and edit it</li>
+   </ul>
+
+   Tasks
+   <ul>
+   <li>Implement a form to edit the content</li>
+   <li>Add a section in the landing page to edit content</li>
+   <li>Restrict the size of the content</li>
+   </ul>
 
 
 <br>
