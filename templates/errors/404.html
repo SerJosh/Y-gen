@@ -1,0 +1,14 @@
+{% extends "account/base.html" %}
+
+{% load static %}
+
+{% block content %}
+<!-- 404.html content -->
+<div class="container-fluid logged-img"
+    style="background-image: url(https://res.cloudinary.com/dkbfmfd5z/image/upload/v1718213644/art-1850155_1280_ihxznv.jpg)">
+    <div class="container form form-verify text-white">
+        <h1>The page you are looking for isn't available</h1>
+        <a class="btn btn-dark btn-welcome" href="{% url 'home' %}">Return to safety</a>
+    </div>
+</div>
+{% endblock content %}
