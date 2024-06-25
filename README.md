@@ -1073,7 +1073,7 @@ Then I can go to a page and edit it</li>
 
 ## The Skeleton Plane
 ### Wireframe mock-ups
-
+Wireframes were produced for the major pages including the landing page, the display of products, the details of the products and the checkout page. Through the creation of the project, some aspects of the wireframes have been changed.
 
 <br>
 
@@ -1085,13 +1085,17 @@ Alternative Landing Page
 <br>
 ![Alternative landing page](documentation/yugen-alternative-landing.png)
 <br>
-Heading
+Products Page
 <br>
-![]()
+![Products Page](documentation/wf-products.png)
 <br>
-Heading
+Product Details Page
 <br>
-![]()
+![Product Details Page](documentation/wf-detail.png)
+<br>
+Checkout Page
+<br>
+![Checkout Page](documentation/wf-checkout.png)
 <br>
 
 
@@ -1128,8 +1132,7 @@ Heading
 <br>
 
 #### Keywords
-
-
+These are the keywords implemented into the project. From this research a refined keyword list was cultivated for use with the short-tail keywords within the head meta tags and for content through out the site.
 <br>
 
 * japanese-artworks
@@ -1172,9 +1175,6 @@ Heading
 
 <br>
 
-
-From this research a refined keyword list was cultivated for use with the short-tail keywords within the head meta tags and for content through out the site. However this only formed a small part of the overall strategy for the sites SEO strategy.
-
 #### Content Strategy
 
 
@@ -1182,16 +1182,18 @@ From this research a refined keyword list was cultivated for use with the short-
 
 ### Design
 
-<br>
-
-![]()
+The simpicity of a clear white background was user with dark fonts and borders over containers and text, this was to not take away from the colour of the images displayed. The Header, Footer and Reviews section implemented a light gray color (rgba(211, 211, 211, 0.5)) to represet the use of watercolours used in jaanese paintings. Dark text and borders were also used over this background colour for overall effect. Buttons implemented a bark or light hover to represent the action of what is happeneing more clearly.
 
 <br>
 
 ### Typography 
 
+Two different fonts were utilised for the site. The main headings font of Sedan SC and the smaller text font of Urbanist were selected for their Elegant and clear (Sedan SC) feel and simple and clear (Urbanist) feel whilst sans-serif was chosen a backup if the other fonts are not displayed.
+
 
 ##### Images
+
+Product and background images were acquired from free image sites [Pixabay](https://pixabay.com/), [UPicjumbo](https://picjumbo.com/) and [Google](https://www.google.com/).
 
 
 ## Features
@@ -1285,9 +1287,12 @@ This can be done by:
 * press enter and git will clone the repository to your local machine
 
 ### Credits
-* 
-* 
-* 
+* The walkthrough project Botuiqe Ado, from Code Institue for the overall and general layout of code and how to go about an Ecommerce Website.
+* The walkthrough project Codestar, from Code Institue for ways to go about doing the Reviews section.
+* [Druid](https://github.com/MattBCoding/druid-pp5) by Matt Bodden, for inspiration of how to go about the project, the Kanban Board and Readme file.
+* [Wordsmith](https://github.com/SerJosh/wordsmith) by myself Joshua Ronan, for guidlines on how to go about the implementation of django-allauth and other parts of the project.
+* [Djando-simple-blog-app](https://github.com/veryacademy/YT-Django-Simple-Blog-App-Part10-User-Favourties-Save) by very academy, for guidelines on how to go about favorites and reviews.
+ 
 
 
 ### Acknowledgements
