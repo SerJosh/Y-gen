@@ -6,7 +6,7 @@ Yugen is a website built on Django using Python, JavaScript, HTML and CSS. The s
 
 ![Screenshot of homepage]()
 
-[View the live website on Heroku]()
+[View the live website on Heroku](https://yugen-319a909ad83d.herokuapp.com/)
 
 Please note: To open any links in this document in a new browser tab, please press CTRL + Click.
 
@@ -39,32 +39,30 @@ Please note: To open any links in this document in a new browser tab, please pre
 ## UX
 
 ### Overall Goals
-* 
-* 
-* 
-* 
+* To provide an ecommerce solution for a small business selling japanese artworks to consumers - B2C
+* To enable business employees to maintain and update the site content in line with their needs easily.
+* To provide users with a simple product selection and purchase experience.
+* To provide the business owner/manager a degree of control over the site.
 
 <br>
 
 ### The Strategy Plane
-* 
+* Yugen is a business to consumer B2C ecommerce site for users (consumers browsing products and making purchases) to find and purchase selected products, read reviews, whilst for business employees they are able to manage the site content to ensure it is kept upto date with the business needs. The overall design of the site is intended to provide users with a clean and easy to navigate environment whilst providing the level of detail required for the different types of products.
 
 ### The Sites Ideal User
-* 
-* 
-* 
+* Japanese related enthusiast searching for new products
+* Someone looking to buy a new product for decoration
+* Someone looking for inspiration for new things they could decorate with
 
 ### Site Goals
 
-* 
-* 
-* 
-* 
+* To provide users with a place to purchase their pictures for display
+* To promote the product range of Yugen
+* To promote Yugen as the preferred site for users to purchase japanese inspired decoration
 
 ### Epics
-!!!!!!!!
 
-XX Epics were created which were then further developed into XX User Stories. The details on each epic, along with the user stories linked to each one can be found in the project kanban board [here](https://github.com/users/SerJosh/projects/7)
+10 Epics were created which were then further developed into 31 User Stories. The details on each epic, along with the user stories linked to each one can be found in the project kanban board [here](https://github.com/users/SerJosh/projects/7)
 
 1. Django Initial Setup [#1](https://github.com/SerJosh/Yugen/issues/1)
 
@@ -166,18 +164,18 @@ XX Epics were created which were then further developed into XX User Stories. Th
 
 ### User Stories
 
-|User Stories| | ||
+|User Stories| | |31|
 |----|----|----|----|
-|Must Have's| | |  |
-|Should Have's| | | |
-|Could Have's| | |  |
-|**Total Story Pts**| | |****|
+|Must Have's| | | 110pts |
+|Should Have's| | | 28pts |
+|**Total Story Pts**| | |**138pts**|
 
 |Completed Pts| | |Uncompleted Pts|
 |----|----|----|----|
-|| | | |
+|130| | |8 |
 
-Explaination
+From the Epics, 31 User stories were developed. Each story was assigned a classification of Must-Have, Should-Have, Could-Have or Won't Have originally, but throughout the development of the project, not could haves or wont haves were developed. Each story was also assigned user story points, based on my best estimation for the time/difficulty of completing each story. A combination of being new to story estimation, inexperience with Django and time constraints during development left me completing 130 story points from the initial total of 138. The full list of User Stories, seperated by those completed and those incomplete are available on the project [kanban board](https://github.com/users/SerJosh/projects/7).
+
 
 These are the user stories that were completed for the project, by Epic.
 
@@ -260,26 +258,53 @@ These are the user stories that were completed for the project, by Epic.
 Arising from user stories
 | Opportunities | Importance | Viability / Feasibility
 | ------ | :------: | :------: |
-| **Provide users the ability to** |  |  |
-| **Provide users the ability to** |  |  |
-| **Provide users the ability to** |  |  |
-| **Provide users the ability to** |  |  |
-| **Provide users the ability to** |  |  |
-| **Provide users the ability to** |  |  |
-| **Provide users the ability to** |  |  |
-| **Provide users the ability to** |  |  |
-| **Provide users the ability to** |  |  |
-| **Provide users the ability to** |  |  |
+| **Provide users the ability to create an account** | 5 | 5 |
+| **Provide users the ability to save address information for easier checkout** | 5 | 5 |
+| **Provide users the ability to edit their account** | 5 | 5 |
+| **Provide users the ability to delete their account** | 3 | 4 |
+| **Provide users the ability to login to their account** | 5 | 5 |
+| **Provide users the ability to logout from their account** | 5 | 5 |
+| **Provide users the ability to view product summary information** | 5 | 5 |
+| **Provide users the ability to view product detailed information** | 5 | 5 |
+| **Provide users the ability to add products to their cart** | 5 | 5 |
+| **Provide users the ability to edit the quantity of products in their cart** | 5 | 5 |
+| **Provide users the ability to remove products from their cart** | 5 | 5 |
+| **Provide users the ability to progress to checkout** | 5 | 5 |
+| **Provide users the ability to enter their information to checkout** | 5 | 5 |
+| **Provide employees the ability to create product** | 4 | 5 |
+| **Provide employees the ability to edit product** | 4 | 5 |
+| **Provide employees the ability to remove product** | 4 | 5 |
+| **Provide employees the ability to edit informative Headings** | 3 | 4 |
+| **Provide users the ability to create reviews** | 5 | 5 |
+| **Provide users the ability to edit reviews** | 5 | 5 |
+| **Provide users the ability to view reviews** | 5 | 5 |
+| **Provide users the ability to delete reviews** | 5 | 5 |
+| **Provide users the ability to save a product to their favorites** | 3 | 5 |
+| **Provide users the ability to remove a product from their favorites** | 3 | 5 |
+| **Provide users the ability to search the site for products** | 4 | 5 |
+| **Provide users the ability to access the site on any device** | 5 | 5 |
 
 
 **Features planned:**
-* 
-* 
-* 
-* 
-* 
-* 
-* 
+* User Profile - Create, Read, Update and Delete
+* User Address - Create, Read, Update and Delete
+* User Wishlist - Create, Read, Update and Delete
+* Users can login to their account, email address and delivery address
+* Users can reset their password if they forget it
+* Users can logout of their account
+* Products - Create, Read, Update and Delete
+* Product Search - by category and keyword
+* Products - View product details or summary information
+* Shopping Cart - Add, Update and Remove products from the shopping cart
+* Checkout - Enter delivery information and payment information
+* Payment Processing - Successfully process payment information and confirm orders
+* Order Confirmation - Confirm order information on payment success
+* Order Tracking - Users can track order status for individual orders
+* Headline Update - Create, Read, Update and Delete
+* Reviews - Create, Read, Update and Delete
+* Users need to be registered and logged in to access product wishlist, saving addresses, prior order information and the ability to provide reviews.
+* Email newsletter subscription - Ability to subscribe to a company newsletter for marketing purposes.
+* Responsive Design - the site needs to be fully responsive to cover the wide variety of devices users may use to access it
 
 <br>
 <br>
@@ -287,7 +312,8 @@ Arising from user stories
 ### The Structure Plane
 
 <br>
-User Story: Django Setup
+
+#### User Story: Django Setup
 
    As a Developer, I can set up Django and install the supporting libraries needed, so that I am ready to start development
 
@@ -304,6 +330,142 @@ User Story: Django Setup
    <li>Create the Django project</li>
    <li>Create the first app</li>
    </ul>
+
+<br>
+
+#### User Story: Secure the Keys
+   As a Developer, I can setup the Django environment to secure the secret keys, so that I do not expose the keys in an insecure way
+
+   Tasks
+   <ul>
+   <li>Create an env.py file to store the environment variables needed</li>
+   <li>Add the env.py file to the .gitignore file so that it does not get pushed to Github</li>
+   </ul>
+
+<br>
+
+#### User Story: Deployment to Heroku
+    As a Developer, I want to deploy the app to Heroku, so that I can confirm everything works before development of the site.
+
+    Tasks
+   <ul>
+   <li>Update code for deployment</li>
+   <li>Create new Heroku app</li>
+   <li>Connect Heroku to the PostgreSQL database</li>
+   <li>Implement and add Secret Key to project and Heroku config var</li>
+   </ul>
+
+<br>
+
+#### User Story: Create a User Account
+    As a user, I would like to be able to create an account, so that I don’t have to enter my details every time I place an order
+
+    Acceptance Criteria
+   <ul>
+   <li>Given that I am an unregistered user
+And, I am on the user registration page
+When I enter my username, email address and password
+And, I click on the register button
+Then the system creates me an account</li>
+   <li>Given that I have an account
+And, I have items in my cart
+WhenI navigate to checkout
+Then I have my address information ready to be used</li>
+   </ul>
+
+   Tasks
+   <ul>
+   <li>Develop ability for users to register for a user account</li>
+   <li>Develop a page and button in the nav bar to direct users to the registration page</li>
+   <li>Remove the register button from the nav bar when users are logged in</li>
+   <li>Create a User Registration form</li>
+   </ul>
+
+<br>
+
+#### User Story: Users must confirm their email
+
+    As a developer, I can make users confirm their email, so that I can keep my account secure
+
+    Acceptance Criteria
+   <ul>
+   <li>Given that a user wants to register
+When they fill in the details in the registration page
+Then they have to confirm their email</li>
+   <li>Given that the user has confirmed their email
+When they have confirmed it in their email
+Then they will be able to access the site as a registered user</li>
+   </ul>
+
+   Tasks
+   <ul>
+   <li>Develop an automated email platform for users to receive email confirmations</li>
+   <li>Include a link to the website to go back once they have confirmed</li>
+   <li>Develop the ability to see confirmed users in the admin page</li>
+   </ul>
+
+
+<br>
+
+#### User Story: Users can reset their password
+
+    As a user I can reset my password so that if I forget it I can still access my account
+
+    Acceptance Criteria
+   <ul>
+   <li>Given that I forgot by password
+When I try to login with an incorrect password
+Then an option is available to reset my password</li>
+   <li>Given that I click on the link to reset my password
+When I enter my email address that I used to sign up,
+Then I should receive an email with instructions on how to reset my password</li>
+<li>Given that I have received the email to reset my password
+When I follow the instructions
+Then my password should be reset, or I should be able to set a new password of my choosing
+And When I do not follow the instructions,
+Then my password should not be reset</li>
+   </ul>
+
+   Tasks
+   <ul>
+   <li>Develop a link on the login page to take users to a reset password page</li>
+   <li>Develop a form for users to enter their email address in order to reset their password</li>
+   <li>Develop an email containing a link to reset the user password</li>
+   <li>Ensure form for user to enter email address, validates the email address as belonging to current user</li>
+   </ul>
+
+<br>
+
+#### User Story: User Account Login / Logout
+
+    As a User, I can login or logout of my account, so that I can keep my account secure
+
+    Acceptance Criteria
+   <ul>
+   <li>Given that I am a registered user, who is not logged in
+When I navigate to the sign in page
+And, I enter my credentials correctly and press sign in
+Then I am signed into my account</li>
+   <li>Given that I am a registered user, who is currently logged in
+When I click on the sign out link
+Then I am signed out of my account</li>
+<li>Given that I am a registered user, who has signed out of my account
+When I use the browser navigation buttons such as back button
+Then I can not access information which requires me to be signed in</li>
+   </ul>
+
+   Tasks
+   <ul>
+   <li>Develop the ability for users to sign into their account</li>
+   <li> Develop a sign in form to capture user sign in details</li>
+   <li>Develop form validation to ensure the data is correct</li>
+   <li>Develop a link for users to sign out of their account – should be accessible from all pages (nav bar), user account section</li>
+   <li>Develop a redirect so if a user signs out whilst on a page requiring a user to be logged in, it redirects them appropriately</li>
+   </ul>
+
+<br>
+
+User Story:
 
 <br>
 
