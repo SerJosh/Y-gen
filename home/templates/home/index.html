@@ -16,20 +16,20 @@
         <div class="container h-100">
             <div class="row h-100">
                 <div class="index-cover">
-                    <div class="col-7 col-md-6 my-auto">
-                        <h3 class="display-4 logo-font text-black">Text
+                    <div class="col-12  my-auto">
+                        <h3 class="display-4 logo-font text-black head-size">Design your world by imagination
                         </h3>
-                        <h4 class="text-black my-1">Free delivery on orders over
+                        <h4 class="text-black head-size-second">Free delivery on orders over
                             ${{ free_delivery_threshold }}!
                         </h4>
                         <div class="my-5">
-                            <h4>
+                            <h4 class="button-pad">
                                 <a href="{% url 'products' %}"
                                     class="btn-welcome btn btn-lg rounded-0 text-uppercase py-3 text-white">shop now</a>
                                 <!-- Update Section -->
                             </h4>
                             {% for update in update %}
-                            <p>{{ update.heading_update }}</p>
+                            <p class="text-black"><strong>{{ update.heading_update }}</strong></p>
                             {% endfor %}
                         </div>
                     </div>

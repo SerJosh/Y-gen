@@ -107,8 +107,8 @@
     </div>
     <!--Reviews-->
     <div class="row">
-        <div class="col-md-8  card mb-4 mt-3 log-head ">
-            <h3>Reviews:</h3>
+        <div class="col-md-8  card mb-4 mt-3 ">
+            <h3>Reviews</h3>
             <div class="card-body">
                 {% for review in reviews %}
                 <div class="p-2">
@@ -121,8 +121,6 @@
                     {% if user.is_authenticated and review.name == user %}
                     <a href="{% url 'delete-review' review.id %}" class="btn btn-outline-black rounded-0"
                         data-comment_id=""><span class="text-uppercase">Delete</span></a>
-                    <a href="#" class="btn btn-outline-black rounded-0 " data-comment_id=""><span
-                            class="text-uppercase">Edit</span></a>
                     {% endif %}
                 </div>
                 <hr>

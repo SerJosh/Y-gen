@@ -59,6 +59,14 @@ header {
 
 /* Home page */
 
+.head-size {
+    font-size: 25px;
+}
+
+.head-size-second {
+    font-size: 20px;
+}
+
 .back0 {
     background: url(https://res.cloudinary.com/dkbfmfd5z/image/upload/v1718212017/image_6483441_5_aopngw.jpg) no-repeat center center;
     background-size: cover;
@@ -304,6 +312,10 @@ header {
     color: white !important;
 }
 
+.button-pad {
+    margin-bottom: 15px;
+}
+
 /* toasts */
 
 .message-container {
@@ -448,7 +460,7 @@ header {
     }
 
     .index-cover {
-        height: 15rem;
+        height: 18rem;
         width: 20rem;
         margin-top: 2rem;
     }
@@ -489,9 +501,17 @@ header {
     }
 
     .index-cover {
-        height: 10rem;
+        height: 18rem;
         width: 15rem;
         margin-top: 2rem;
+    }
+
+    .head-size {
+        font-size: 20px;
+    }
+    
+    .head-size-second {
+        font-size: 15px;
     }
 }
 

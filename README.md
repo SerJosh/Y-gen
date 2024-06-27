@@ -1,7 +1,7 @@
 # Yugen
 
 ## Introduction
-Yugen is a website built on Django using Python, JavaScript, HTML and CSS. The site is a full B2C ecommerce website for a fictional business. The business sells Japanese inspired artworks, be it for decoration in your office, home or anywhere you want; ranging from Traditional artworks, Modern artworks or Anime artworks. Users of the site can search for products via manual keyword search, filter by category or browse through all products available. They can select differing quantities of products for purchase and add them to their shopping cart, and proceed through a purchase process designed to be simple and with minimal steps. There is also a reviews section for users to review products as well as a favorites option where users can add product to their favorites.
+Yugen is a website built on Django using Python, JavaScript, HTML and CSS. The site is a full B2C ecommerce website for a fictional business. The business sells Japanese inspired artworks, be it for decoration in your office, home or anywhere you want; ranging from Traditional artworks, Modern artworks or Anime artworks. Users of the site can search for products via manual keyword search, filter by category or browse through all products available. They can select differing quantities of products for purchase and add them to their shopping cart, and proceed through a purchase process designed to be simple and with minimal steps. There is also a reviews section for users to review products as well as a favorites option where users can add product to their favorites. Admin are able to add, delete and edit products as well as customise the updates heading in the landing page.
 
 
 ![Screenshot of homepage]()
@@ -25,6 +25,7 @@ Please note: To open any links in this document in a new browser tab, please pre
     + [The Structure Plane](#the-structure-plane)
     + [The Skeleton Plane](#the-skeleton-plane)
       + [Wireframe mock-ups](#wireframe-mock-ups)
+      + [Social Media Marketing](#social-media-marketing)
       + [Database Schema](#database-schema)
       + [SEO Considerations](#seo-considerations)
   * [The Surface Plane](#the-surface-plane)
@@ -274,7 +275,7 @@ Arising from user stories
 | **Provide employees the ability to create product** | 4 | 5 |
 | **Provide employees the ability to edit product** | 4 | 5 |
 | **Provide employees the ability to remove product** | 4 | 5 |
-| **Provide employees the ability to edit informative Headings** | 3 | 4 |
+| **Provide employees the ability to edit informative Headings updates** | 3 | 4 |
 | **Provide users the ability to create reviews** | 5 | 5 |
 | **Provide users the ability to edit reviews** | 5 | 5 |
 | **Provide users the ability to view reviews** | 5 | 5 |
@@ -1098,6 +1099,18 @@ Checkout Page
 ![Checkout Page](documentation/wf-checkout.png)
 <br>
 
+
+### Social Media Marketing
+
+Facebook was used as an extension for social media marketing for this website, if still active this is the facbook business page [Yugen](https://www.facebook.com/profile.php?id=61561504131258)
+
+Here are the screenshots of the page.
+
+![FaceBook page 1](documentation/fb-2.png)
+
+<br>
+
+![FaceBook page 2](documentation/fb-1.png)
 
 ### Database Schema
 
