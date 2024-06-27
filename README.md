@@ -1211,19 +1211,157 @@ Product and background images were acquired from free image sites [Pixabay](http
 
 ## Features
 
-### Feature
-Explaination
+### Landing Page
+This is the landing page of the website, where users are introduced to brief yet insightfull information of the site, as the user scrolls down, the user can see the categories displayed via images (Traditional, modern, anime) where there is a shop now button to see products of that category. The last section is the mailchimp section where users can sign up to the newsletter. 
 <br>
 
-![]()
+![Landing Page](documentation/landing.png)
 
 <br>
 
-### Feature
-Explaination
+![Landing Page traditonal](documentation/traditional.png)
+
 <br>
 
-![]()
+![Landing Page modern](documentation/modern.png)
+
+<br>
+
+![Landing Page anime](documentation/anime.png)
+
+<br>
+
+![Landing Page mailchimp](documentation/mailchimp.png)
+
+<br>
+
+<br>
+
+### Products
+This page displays an array of prducts, where users can filter through product by name, price and category, where the range alters according to the filter, cliccking on the image will take you to the product details page.
+<br>
+
+![Products](documentation/products.png)
+
+<br>
+
+### Shoping bag
+The shopping bag gives a list of all the products selected in the store, and giving the option to change the quantity or remove items. It also gives the grand total at the bottom and a button to proceed to checkout.
+<br>
+
+![Shoping bag](documentation/bag.png)
+
+<br>
+
+### Checkout
+The checkout is where users can pay for their items using the checkout form, if details are edited or saved in the profile, these changes will show up on this page too.
+<br>
+
+![Checkout](documentation/checkout.png)
+
+<br>
+
+### Product-deatil
+A detailed explaination of the product, from its name, category, price and description where users can also click on the image to open another page to get a bigger look at the product. It also give the option to add to favorites, increase or decrease the quantity desired.
+<br>
+
+![Product-deatil](documentation/detail.png)
+
+<br>
+
+### Product-review
+A section on the product-detail page where users can leave reviews of products and delete their own reviews.
+<br>
+
+![Product-review](documentation/review.png)
+
+<br>
+
+### Favorites
+A feature where users can bookmark or make some products their favorites and it is kept on this page where they have access to it in their account
+<br>
+
+![Favorites](documentation/favorites.png)
+
+<br>
+
+### Product-management
+A page in the site when admin can add, edit or delete products in yugen to keep everything up to date.
+<br>
+
+![Product-management](documentation/product-management.png)
+
+<br>
+
+### Update-management
+A page when admin of the site can change the update text in the homw page to let users know of more or useful information about the store, products or anything related to yugen
+<br>
+
+![Update-management](documentation/update-management.png)
+
+<br>
+
+### Profile
+A users profile details of their billing address and past history purchases
+<br>
+
+![Profile](documentation/profile.png)
+
+<br>
+
+### Order-confirmation
+A detailed summary of their details and orders after purchasing an item or items.
+<br>
+
+![Order-confirmation](documentation/orderconfirm.png)
+
+<br>
+
+### sign in
+Users can sign in via the sign in form if signed out
+<br>
+
+![sign in](documentation/signin.png)
+
+<br>
+
+### sign-out
+Users can sign out via the sign out form when they are signed in
+<br>
+
+![sign-out](documentation/signout.png)
+
+<br>
+
+### sign-up
+Users can create an account via the sign up form
+<br>
+
+![sign-up](documentation/signup.png)
+
+<br>
+
+### password
+There is a reset password option if a user has forgotten their password, which lets the user reset their password via email confirmation
+<br>
+
+![password](documentation/password.png)
+
+<br>
+
+### Header
+The header displays most of the sites functionality, from searching, access to the shopping bag page, the dropdown menu for the user accounts, the filter search of traditional, modern and anime and the Logo, which when clicked takes you back to the home page.
+<br>
+
+![Header](documentation/header.png)
+
+<br>
+
+### Footer
+The footer displays links to facebook and github. The footer is at the bottom of every page.
+<br>
+
+![Footer](documentation/footer.png)
 
 <br>
 
