@@ -1368,7 +1368,133 @@ The footer displays links to facebook and github. The footer is at the bottom of
 
 ## Testing
 
-!!!! BIG STUFF HERE !!!!
+### Validation of Code
+
+#### HTML
+
+All the pages were tested at the [W3C Markup Validation Service](https://validator.w3.org/).
+all include base.html
+
+bag.html
+
+![bag.html]()
+
+errors 
+
+checkout_success.html
+
+![checkout_success.html]()
+
+errors
+
+checkout.html
+
+![checkout.html]()
+
+errors
+
+edit_home.html
+
+![edit_home.html](documentation/check-edit.png)
+
+no errors detected
+
+index.html
+
+![index.html]()
+
+errors
+
+add_pictures.html
+
+![add_pictures.html](documentation/check-404.png)
+
+no errors detected
+
+edit_pictures.html
+
+![edit_pictures.html](documentation/check-pic-edit.png)
+
+no errors detected
+
+pictures_detail.html
+
+![pictures_detail.html]()
+
+errors
+
+pictures.html
+
+![pictures.html]()
+
+errors
+
+favourites.html
+
+![favourites.html](documentation/check-fav.png)
+
+no errors detected
+
+profile.html
+
+![profile.html]()
+
+errors
+
+404.html
+
+![404.html](documentation/check-404.png)
+
+Checking for errors on this page proved to be difficult as with the template tags, you can only use a url link to check the code, and with the 404, the url link will obviously be incorrect.
+
+email_confirm.html
+
+![email_confirm.html]()
+
+errors
+
+login.html
+
+![login.html](documentation/check-login.png)
+
+no errors detected
+
+logout.html
+
+![logout.html]()
+
+errors
+
+password_reset_done.html
+
+![password_reset_done.html](documentation/check-pass-reset-done.png)
+
+no errors detected
+
+password_reset_from_key_done.html
+
+![password_reset_from_key_done.html](documentation/check-pass-reset-key-done.png)
+
+no errors detected
+
+password_reset_from_key.html
+
+![password_reset_from_key.html](documentation/check-pass-reset-key.png)
+
+no errors detected
+
+password_reset.html
+
+![password_reset.html](documentation/check-pass-reset.png)
+
+no errors detected
+
+signup.html
+
+![signup.html]()
+
+4 errors detected, I could not change the {{ form as p }} in the django allauth template as I did not know how and that is where the errors lay, also I could not understand why there was an error as the span was closed as well as the other elements.
+
 
 
 ## Deployment
