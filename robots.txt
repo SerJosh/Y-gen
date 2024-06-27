@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /bag/
+Disallow: /admin/
+Disallow: /profiles/
+Sitemap: https://yugen-319a909ad83d.herokuapp.com//sitemap.xml

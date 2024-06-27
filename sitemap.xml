@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://yugen-319a909ad83d.herokuapp.com/</loc>
+  <lastmod>2024-06-27T19:07:32+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://yugen-319a909ad83d.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2024-06-27T19:07:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://yugen-319a909ad83d.herokuapp.com/accounts/login/</loc>
+  <lastmod>2024-06-27T19:07:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://yugen-319a909ad83d.herokuapp.com/bag/</loc>
+  <lastmod>2024-06-27T19:07:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://yugen-319a909ad83d.herokuapp.com/pictures/?sort=price&amp;direction=asc</loc>
+  <lastmod>2024-06-27T19:07:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://yugen-319a909ad83d.herokuapp.com/pictures/?sort=category&amp;direction=asc</loc>
+  <lastmod>2024-06-27T19:07:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://yugen-319a909ad83d.herokuapp.com/pictures/</loc>
+  <lastmod>2024-06-27T19:07:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://yugen-319a909ad83d.herokuapp.com/pictures/?category=traditional</loc>
+  <lastmod>2024-06-27T19:07:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://yugen-319a909ad83d.herokuapp.com/pictures/?category=modern</loc>
+  <lastmod>2024-06-27T19:07:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://yugen-319a909ad83d.herokuapp.com/pictures/?category=anime</loc>
+  <lastmod>2024-06-27T19:07:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://yugen-319a909ad83d.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2024-06-27T19:07:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yugen-319a909ad83d.herokuapp.com/pictures/20/</loc>
+  <lastmod>2024-06-27T19:07:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yugen-319a909ad83d.herokuapp.com/pictures/21/</loc>
+  <lastmod>2024-06-27T19:07:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yugen-319a909ad83d.herokuapp.com/pictures/22/</loc>
+  <lastmod>2024-06-27T19:07:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yugen-319a909ad83d.herokuapp.com/pictures/23/</loc>
+  <lastmod>2024-06-27T19:07:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yugen-319a909ad83d.herokuapp.com/pictures/24/</loc>
+  <lastmod>2024-06-27T19:07:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yugen-319a909ad83d.herokuapp.com/pictures/25/</loc>
+  <lastmod>2024-06-27T19:07:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
