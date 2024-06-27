@@ -4,6 +4,12 @@ html {
     height: 100%;
 }
 
+body {
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column
+}
+
 p {
     font-family: Urbanist, sans-serif;
 }
@@ -156,6 +162,7 @@ header {
 .foot-color {
     background-color: rgba(211, 211, 211, 0.9);
     border: 5px solid #000000;
+    margin-top: auto
 }
 
 
