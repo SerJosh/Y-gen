@@ -4,7 +4,7 @@
 Yugen is a website built on Django using Python, JavaScript, HTML and CSS. The site is a full B2C ecommerce website for a fictional business. The business sells Japanese inspired artworks, be it for decoration in your office, home or anywhere you want; ranging from Traditional artworks, Modern artworks or Anime artworks. Users of the site can search for products via manual keyword search, filter by category or browse through all products available. They can select differing quantities of products for purchase and add them to their shopping cart, and proceed through a purchase process designed to be simple and with minimal steps. There is also a reviews section for users to review products as well as a favorites option where users can add product to their favorites. Admin are able to add, delete and edit products as well as customise the updates heading in the landing page.
 
 
-![Screenshot of homepage]()
+![Screenshot of homepage](documentation/readme-hero.png)
 
 [View the live website on Heroku](https://yugen-319a909ad83d.herokuapp.com/)
 
