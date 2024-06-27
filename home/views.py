@@ -28,7 +28,7 @@ def edit_update(request):
         form = UpdateForm(request.POST, request.FILES, instance=update)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Successfully edited update!')
+            messages.info(request, f'Headline update edited')
             return redirect(reverse('edit_update'))
         else:
             messages.error(request, 'Failed to edit update. Please ensure the form is valid.')
