@@ -1493,7 +1493,111 @@ signup.html
 
 ![signup.html]()
 
-4 errors detected, I could not change the {{ form as p }} in the django allauth template as I did not know how and that is where the errors lay, also I could not understand why there was an error as the span was closed as well as the other elements.
+errors
+
+#### CSS
+
+The CSS code was tested at [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/).
+
+checkout.css
+
+![checkout.css](documentation/css-checkou.png)
+
+No errors detected
+
+profile.css
+
+![profile.css](documentation/css-profile.png)
+
+No errors detected
+
+base.css
+
+![base.css](documentation/css-base.png)
+
+No errors detected
+
+
+#### JavaScript
+
+The JavaScript file was validated through [JSHint](https://jshint.com/).
+
+stripe_elements.js
+
+![stripe_elements.js](documentation/js-1.png)
+
+ the $ function references an element from the DOM there for is not an error, and stripe has been inported. therefore no errors
+
+countryfield.js
+
+![countryfield.js](documentation/js-2.png)
+
+the $ function references an element from the DOM there for is not an error, therefore no errors.
+
+
+#### Python
+
+All Python files have been validated through [CI Python Linter](https://pep8ci.herokuapp.com/)
+
+##### bag
+
+apps.py
+
+![apps.py](documentation/bag-app.png)
+
+no errors detected
+
+
+contexts.py
+
+![contexts.py](documentation/bag-context.png)
+
+no errors detected
+
+urls.py
+
+![urls.py](documentation/bag-url.png)
+
+no errors detected
+
+views.py
+
+![views.py](documentation/bag-view.png)
+
+no errors detected
+
+
+##### checkout
+
+admin.py
+
+![admin.py](documentation/checkout-admin.png)
+
+no errors detected
+
+
+apps.py
+
+![apps.py](documentation/checkou-apps.png)
+
+no errors detected
+
+forms.py
+
+![forms.py](documentation/checkout-forms.png)
+
+no errors detected
+
+models.py
+
+![models.py]()
+
+no errors detected
+
+views.py
+
+
+
 
 
 

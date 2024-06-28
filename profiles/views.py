@@ -7,6 +7,7 @@ from pictures.models import Product
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 
+
 @ login_required
 def favourite_add(request, id):
     """Add Product to Favorites"""
@@ -16,6 +17,7 @@ def favourite_add(request, id):
     else:
         product.favourites.add(request.user)
     return HttpResponseRedirect(request.META['HTTP_REFERER'])
+
 
 @ login_required
 def favourite_list(request):
@@ -37,7 +39,8 @@ def profile(request):
             form.save()
             messages.success(request, 'Profile updated successfully')
         else:
-            messages.error(request, 'Update failed. Please ensure the form is valid.')
+            messages.error(request,
+                           'Update failed, please ensure the form is valid.')
     else:
         form = UserProfileForm(instance=profile)
     orders = profile.orders.all()
@@ -50,6 +53,7 @@ def profile(request):
     }
 
     return render(request, template, context)
+
 
 def order_history(request, order_number):
     """ Display the user's order history. """
