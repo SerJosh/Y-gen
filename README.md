@@ -1419,9 +1419,10 @@ no errors detected
 
 pictures_detail.html
 
-![pictures_detail.html]()
+![pictures_detail.html](documentation/html-pic-dtail.png)
 
-errors
+It seems to think that there is missing closing tags that do not appear to be missing.
+In thepictures_detail.html template, on line 79 an if block is opened - then inside that, an inner if block is opened, which is closed on line 88. Then the div is close before closing the original if block. If the user is not authenticated - that closing tag won't appear
 
 pictures.html
 
@@ -1746,6 +1747,21 @@ no errors detected
 
 ### Manual Testing
 
+Header / Navbar
+
+| Feature being tested | Expected Outcome | Testing Performed | Actual Outcome | Result (Pass or fail) |
+| -------------------- | ---------------- | ----------------- | -------------- | --------------------- |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+
+
 
 
 
@@ -1791,6 +1807,61 @@ no errors detected
 | password reset button | When the "password reset" button is pressed, the user gets confirmation of a password reset action | Click at "password reset" button | The user gets confirmation of a password reset action | Pass |
 | Redirected | When the "password reset" button is pressed, the user gets redirected to the page they visited before | Visit change sign in page page, click reset password| The user got redirected to password reset page | Pass |
 | email confirmation | when resseting password, email verifcation is sent | reset password and check if recieved email | recieved email | pass |
+
+#### Technologies Used
+
+* Python
+    * The following python modules were used on this project:
+         * asgiref==3.8.1
+         * boto3==1.34.129
+         * botocore==1.34.129
+         * crispy-bootstrap4==2024.1
+         * dj-database-url==2.2.0
+         * Django==5.0.6
+         * django-allauth==0.63.3
+         * django-countries==7.6.1
+         * django-crispy-forms==2.1
+         * django-storages==1.14.3
+         * gunicorn==22.0.0
+         * jmespath==1.0.1
+         * pillow==10.3.0
+         * psycopg2==2.9.9
+         * s3transfer==0.10.1
+         * sqlparse==0.5.0
+         * stripe==9.11.0
+
+* Django
+    * Django was used as the main python framework in the development of this project
+    * Django AllAuth was utilised to provide enhanced user account management functionality.
+* Heroku
+    * Was used as the cloud based platform to deploy the site on
+* Elephant SQL
+    * Elephant SQL was used as the database for this project during development and in production.
+* JavaScript
+    * Custom JavaScript was utilised for the enabling and disabling of buttons on forms to prevent users inadvertantly causing errors when trying to submit multiple forms at the same time, and to display the current image in the form rather than a hyperlink to the image itself.
+* Bootstrap
+    * Bootstrap was used for general layout and spacing requirements for the site.
+* Font Awesome
+    * Was used for access to several icons for different sections where icons were appropriate.
+* CSS
+    * Custom css was written for a large number of areas on the site to implement custom styling and escape a bootstrap look and feel to the site.
+* Jinja/Django Templating
+    * Jinja/Django templating language was utilised to insert data from the database into the sites pages. It was also utilised to perform queries on different datasets.
+* HTML
+    * HTML was used as the base language for the templates created for the site.
+
+#### Packages Used
+
+* Gitpod was used to develop the site
+* GitHub was utilised for storing the files for this project
+* Balsamiq was utilised to develop wireframes for the site from which the design was based
+
+#### Resources Used
+
+* The Django documentation was used extensively during development of this project
+* The Django AllAuth documentation was used as a reference and a guide for implementing the package and its features.
+* The Code Institute reference material was used as a general reference for things that I had previously done during the course.
+* All other resources used are referenced where appropriate.
 
 
 
