@@ -1594,7 +1594,151 @@ models.py
 
 no errors detected
 
+signals.py
+
+![signals.py](documentation/checkout-signal.png)
+
+no errors detected
+
+urls.py
+
+![urls.py](documentation/checkour-url.png)
+
+no errors detected
+
 views.py
+
+![views.py](documentation/checkout-view.png)
+
+no errors detected
+
+webhook_handler.py
+
+![webhook_handler.py]()
+
+no errors detected
+
+webhooks.py
+
+![webhooks.py](documentation/checkout-webhook.png)
+
+no errors detected
+
+##### home
+
+admin.py
+
+![admin.py](documentation/home-admin.png)
+
+no errors detected
+
+forms.py
+
+![forms.py](documentation/home-form.png)
+
+no errors detected
+
+models.py
+
+![models.py](documentation/home-models.png)
+
+no errors detected
+
+urls.py
+
+![urls.py](documentation/home-urls.png)
+
+no errors detected
+
+admin.py
+
+![views.py](documentation/home-views.png)
+
+no errors detected
+
+##### pictures
+
+admin.py
+
+![admin.py](documentation/pic-admin.png)
+
+no errors detected
+
+forms.py
+
+![forms.py](documentation/pic-form.png)
+
+no errors detected
+
+models.py
+
+![models.py](documentation/pic-model.png)
+
+no errors detected
+
+urls.py
+
+![urls.py](documentation/pic-url.png)
+
+no errors detected
+
+views.py
+
+![views.py](documentation/pic-view.png)
+
+no errors detected
+
+widgets.py
+
+![widgets.py.py](documentation/pic-widget.png)
+
+no errors detected
+
+##### profiles
+
+forms.py
+
+![forms.py](documentation/profile-form.png)
+
+no errors detected
+
+models.py
+
+![models.py](documentation/profile-model.png)
+
+no errors detected
+
+urls.py
+
+![urls.py](documentation/profile-url.png)
+
+no errors detected
+
+views.py
+
+![views.py](documentation/profile-view.png)
+
+no errors detected
+
+##### yugen
+
+urls.py
+
+![urls.py](documentation/yugen-url.png)
+
+no errors detected
+
+views.py
+
+![views.py](documentation/yugen-view.png)
+
+no errors detected
+
+custom_storages.py
+
+![custom_storages.py](documentation/yugen-storage.png)
+
+no errors detected
 
 
 

@@ -6,7 +6,7 @@ class Category(models.Model):
 
     class Meta:
         verbose_name_plural = 'Categories'
-        
+
     name = models.CharField(max_length=254, null=True, blank=True)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
 
@@ -19,7 +19,8 @@ class Category(models.Model):
 
 class Product(models.Model):
     """A product model for details of the product"""
-    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
+    category = models.ForeignKey('Category', null=True,
+                                 blank=True, on_delete=models.SET_NULL)
     sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)
     description = models.TextField()
@@ -32,11 +33,12 @@ class Product(models.Model):
     def __str__(self):
         return self.name
 
+
 class Review(models.Model):
     """A review model for reviews"""
     product = models.ForeignKey(Product,
-                             on_delete=models.CASCADE,
-                             related_name='reviews')
+                                on_delete=models.CASCADE,
+                                related_name='reviews')
     name = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="reviewer")
     content = models.TextField()

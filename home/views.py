@@ -4,6 +4,7 @@ from .models import Update
 from .forms import UpdateForm
 from django.contrib.auth.decorators import login_required
 
+
 # Create your views here.
 def index(request):
     """ A view to return the index page """
@@ -12,7 +13,7 @@ def index(request):
     context = {
         'update': update,
     }
-    
+
     return render(request, 'home/index.html', context)
 
 
@@ -31,7 +32,7 @@ def edit_update(request):
             messages.info(request, f'Headline update edited')
             return redirect(reverse('edit_update'))
         else:
-            messages.error(request, 'Failed to edit update. Please ensure the form is valid.')
+            messages.error(request, 'Failed. Please ensure the form is valid.')
     else:
         form = UpdateForm(instance=update)
         messages.info(request, f'You are editing the update')
@@ -43,5 +44,3 @@ def edit_update(request):
     }
 
     return render(request, template, context)
-
-
