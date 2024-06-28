@@ -1794,15 +1794,58 @@ no errors detected
 
 | Feature being tested | Expected Outcome | Testing Performed | Actual Outcome | Result (Pass or fail) |
 | -------------------- | ---------------- | ----------------- | -------------- | --------------------- |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
+| image | when clicked on image displays image on a bigger page | click on image | image displays image on a bigger page | pass |
+| edit/delete only shown to admin | when logged in as admiin edit/delete is show on product detail | login as admin and check | edit/delete is show on product detail | pass |
+| (admin)click on edit on product | takes you to product management page | click on edit | takes you to product management page | pass |
+| (admin)click on delete on product |deletes product | click on delete | deletes product | pass |
+| quantity plus | incleases the amount by 1 | click plus | incleases the amount by 1 | pass |
+| quantity minus | decreases the amount by 1 | click minus | decreases the amount by 1 | pass |
+| up and down icons in middle | inclease/decrease amount by up and down buttons respectively | click on the up and down buttons | inclease/decrease amount by up and down buttons respectively | pass |
+| ad to favorites(unregesterd) | button does not display when unregestered | check page when unregestered | button does not display when unregestered | pass |
+| ad to favorites(regesterd) | button does display when regestered  | check page when regestered | button does display when regestered  | pass |
+| ad to favorites | when clicked adds to favorite page | click on add to favorite | adds to favorite page | pass |
+| review(unregesterd) | when unregestered you cant comment | check page unregestered | you cant comment | pass |
+| review(regesterd) | when regestered you can comment | check page regestered | you can comment | pass |
+| submitting review | when typed in review and press submit, it displays on reviews with your user name | type a comment and press submit | it displays on reviews with your user name | pass |
+| delete comment | your own comment can be deleted | click delete | your own comment is deleted | pass |
+| delete comment | cant delete other users comments | check if you can delete other comments |unable to | pass |
+| Add to bag | adds product to bag page  | add to bag and check bag page | adds product to bag page  | pass |
+| keep shopping | takes you back to product page | click keep shopping | takes you back to product page | pass |
+
+#### bag page
+
+| Feature being tested | Expected Outcome | Testing Performed | Actual Outcome | Result (Pass or fail) |
+| -------------------- | ---------------- | ----------------- | -------------- | --------------------- |
+|go to secure checkout  | takes you to bag page |click secure checkout  | takes you to bag page | pass |
+| totals | totals are summed up accurately displaying deliver/bag total/grand total | check bag page totals | totals are summed up accurately displaying deliver/bag total/grand total | pass |
+| quantity plus | incleases the amount by 1 | click plus | incleases the amount by 1 | pass |
+| quantity minus | decreases the amount by 1 | click minus | decreases the amount by 1 | pass |
+| update | update the changed quantity | click on update when changed quantitiy | updated the changed quantity | pass |
+| remove | removes the product | click on remove | removed the product | pass |
+| keep shopping | takes you back to product page | click keep shopping | takes you back to product page | pass |
+| secure checkout | takes you to checkout page | click secure checkout  | takes you to checkout page | pass |
+
+
+#### checkout page
+
+| Feature being tested | Expected Outcome | Testing Performed | Actual Outcome | Result (Pass or fail) |
+| -------------------- | ---------------- | ----------------- | -------------- | --------------------- |
+| checkout(unregestered) | card input is not there but options to sign in, sign out | check checkout page unregestered | card input is not there but options to sign in, sign out | pass |
+| register  | takes you to that page | click on regester | takes you to that page | pass |
+| login  | takes you to that page | click on login | takes you to that page | pass |
+| Checkout form | when full name/email address/phone number/street address/town or city/country are not selected it tells you to fill in the field | dont fill in name/email address/phone number/street address/town or city/country respectively and check | name/email address/phone number/street address/town or city/country are not selected it tells you to fill in the field respectively | pass |
+| no card number | when no card number and you click complete order it displays Your card number is incomplete. | click complete order without card number | it displays Your card number is incomplete. | pass |
+| incorrect card number | when incorrect card number and you click complete order it displays Your card number is incomplete. | type in an incorrect card number (thats not 42424242424242) | displays Your card number is incomplete. | pass |
+| country field | clicking on country displays all countries on a field | click on country | displays all countries on a field | pass |
+| country field | clicking on a country puts the result in the country box | click on any country | that country is shown on the field | pass |
+| save information(unregestered) | when unregestered is displays 
+Create an account or login to save this information | check page when unregestered | displays 
+Create an account or login to save this information | pass |
+| Create an account | takes you to the regester page | click create an account | akes you to the regester page | pass |
+| login | takes you to the login page | click login | takes you to the login page | pass |
+| Save this delivery information to my profile | when checked the box it saves your information | check the box and see in your profile if the details are the same | saves your information | pass |
+| complete order(all correct) | when clicked complete order with all info correct you get a confirmation email and go to checkout success page | click oncomplete order(all correct) | you get a confirmation email and go to checkout success page | pass |
+| checkout success page | displays all details of the order | look at successpage | displays all details | pass |
 
 
 
