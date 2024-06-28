@@ -1741,6 +1741,58 @@ custom_storages.py
 no errors detected
 
 
+### Automated Testing
+
+
+### Manual Testing
+
+
+
+
+
+#### Allauth pages
+
+##### Sign up page
+
+| Feature being tested | Expected Outcome | Testing Performed | Actual Outcome | Result (Pass or fail) |
+| -------------------- | ---------------- | ----------------- | -------------- | --------------------- |
+| Responsive design | The page changes so the content fit at the smallest to the largest screens without scrolling sideways | In DevTools, select the smallest device and make it larger step by step | The page was responsive and changed depending on screen size | Pass |
+| Text readability | Enough margins and padding to make text readable | Read all text blocks at all different media query breakpoints | The text is readable at all breakpoints | Pass |
+| All fields required | An error message appears when the user tries to sign up but leaves one field empty | Leave one field empty one by one and try to Sign Up | An error message appeared when a field was left empty | Pass |
+| Redirected | When the "Sign Up" button is pressed, the user gets redirected to the page they visited before, but in the authenticated section | Click Sign up, fill out all required fields, press "Sign Up" button | The user got redirected to the autheniticated index page | Pass |
+| email confirmation | when signed up, email verifcation is sent | sign up and check if recieved email | recieved email | pass |
+
+
+##### Sign in page
+
+| Feature being tested | Expected Outcome | Testing Performed | Actual Outcome | Result (Pass or fail) |
+| -------------------- | ---------------- | ----------------- | -------------- | --------------------- |
+| Responsive design | The page changes so the content fit at the smallest to the largest screens without scrolling sideways | In DevTools, select the smallest device and make it larger step by step | The page was responsive and changed depending on screen size | Pass |
+| Text readability | Enough margins and padding to make text readable | Read all text blocks at all different media query breakpoints | The text is readable at all breakpoints | Pass |
+| All fields required | An error message appears when the user tries to sign in but leaves one field empty | Leave one field empty one by one and try to Sign In | An error message appeared when a field was left empty | Pass |
+| Sign In button | When the "Sign In" button is pressed, the user gets signed in | Click at "Sign In" button | The user gets signed in | Pass |
+| Redirected | When the "Sign In" button is pressed, the user gets redirected to the page they visited before | index.html authenticatted page, click Sign in, press "Sign In" button | The user got redirected to index.html authenticatted page | Pass |
+
+##### Sign out page
+
+| Feature being tested | Expected Outcome | Testing Performed | Actual Outcome | Result (Pass or fail) |
+| -------------------- | ---------------- | ----------------- | -------------- | --------------------- |
+| Responsive design | The page changes so the content fit at the smallest to the largest screens without scrolling sideways | In DevTools, select the smallest device and make it larger step by step | The page was responsive and changed depending on screen size | Pass |
+| Text readability | Enough margins and padding to make text readable | Read all text blocks at all different Bootstrap breakpoints | The text is readable at all breakpoints | Pass |
+| Sign Out button | When the "Sign Out" button is pressed, the user gets signed out | Click at "Sign Out" button | The user gets signed out | Pass |
+| Redirected | When the "Sign Out" button is pressed, the user gets redirected to the page they visited before | Visit Booking page, click Sign out, press "Sign Out" button | The user got redirected to Booking page | Pass |
+
+##### Password reset page
+
+| Feature being tested | Expected Outcome | Testing Performed | Actual Outcome | Result (Pass or fail) |
+| -------------------- | ---------------- | ----------------- | -------------- | --------------------- |
+| Responsive design | The page changes so the content fit at the smallest to the largest screens without scrolling sideways | In DevTools, select the smallest device and make it larger step by step | The page was responsive and changed depending on screen size | Pass |
+| Text readability | Enough margins and padding to make text readable | Read all text blocks at all different media query breakpoints | The text is readable at all breakpoints | Pass |
+| password reset button | When the "password reset" button is pressed, the user gets confirmation of a password reset action | Click at "password reset" button | The user gets confirmation of a password reset action | Pass |
+| Redirected | When the "password reset" button is pressed, the user gets redirected to the page they visited before | Visit change sign in page page, click reset password| The user got redirected to password reset page | Pass |
+| email confirmation | when resseting password, email verifcation is sent | reset password and check if recieved email | recieved email | pass |
+
+
 
 
 
