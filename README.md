@@ -1590,7 +1590,7 @@ no errors detected
 
 models.py
 
-![models.py]()
+![models.py](documentation/checkout-model.png)
 
 no errors detected
 
@@ -1614,7 +1614,7 @@ no errors detected
 
 webhook_handler.py
 
-![webhook_handler.py]()
+![webhook_handler.py](documentation/checkout-handler.png)
 
 no errors detected
 
