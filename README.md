@@ -26,7 +26,6 @@ Please note: To open any links in this document in a new browser tab, please pre
     + [The Skeleton Plane](#the-skeleton-plane)
       + [Wireframe mock-ups](#wireframe-mock-ups)
       + [Social Media Marketing](#social-media-marketing)
-      + [Database Schema](#database-schema)
       + [SEO Considerations](#seo-considerations)
   * [The Surface Plane](#the-surface-plane)
   * [Features](#features)
@@ -1112,32 +1111,6 @@ Here are the screenshots of the page.
 
 ![FaceBook page 2](documentation/fb-1.png)
 
-### Database Schema
-
-<br>
-
-![Database Schema Diagram]()
-
-<br>
- 
-<br>
-
-![Model]()
-
-<br>
-
-<br>
-
-![Model]()
-
-<br>
-
-<br>
-
-![Model]()
-
-<br>
-
 <br>
 
 ### SEO Considerations
@@ -1741,13 +1714,7 @@ custom_storages.py
 
 no errors detected
 
-
-### Automated Testing
-
-
 ### Manual Testing
-
-Header / Navbar
 
 | Feature being tested | Expected Outcome | Testing Performed | Actual Outcome | Result (Pass or fail) |
 | -------------------- | ---------------- | ----------------- | -------------- | --------------------- |
@@ -1760,6 +1727,83 @@ Header / Navbar
 |  |  |  |  |  |
 |  |  |  |  |  |
 |  |  |  |  |  |
+
+#### Header/nav
+
+| Feature being tested | Expected Outcome | Testing Performed | Actual Outcome | Result (Pass or fail) |
+| -------------------- | ---------------- | ----------------- | -------------- | --------------------- |
+| the logo yugen link | takes you back to the home page |go to another page and press yugen  | goes back to landing page | pass |
+| the search icon | a pop up for a seach input shows up | press search | input shows up | pass |
+| search functionality | type a key that is in the website | type a sigle letter/category/name of product | correct results are shown | pass |
+| my account (unregesterd) | a pop up of register and login show up | press my account (unregesterd) | pop up of register and login show up | pass |
+| my account (regesterd) | my profile/favorites/logout show up | click on my account(regestered) | my profile/favorites/logout show up | pass |
+| my account (admin) | product management/edit update/my profile/favorites/logout show up | click on my account(admin) | product management/edit update/my profile/favorites/logout show up | pass |
+| shopping bag | takes you to the bag page | click on the bag icon | takes you to the bag page | pass |
+|shopping bag | shopping bag changes color and displays an amount at the bottom  | click on a product and check the bag | it changes color and an amout displays | pass |
+| register in my account | takes you to that page | click on regester | takes you to that page | pass |
+| login in my account | takes you to that page | click on login | takes you to that page | pass |
+| product management in my account | takes you to that page | click on product management | takes you to that page | pass |
+| edit update in my account | takes you to that page | click on edit update | takes you to that page | pass |
+| my profile in my account | takes you to that page | click on my profile | takes you to that page | pass |
+| favorites in my account | takes you to that page | click on favorites | takes you to that page | pass |
+| logout in my account | takes you to that page | click on logout | takes you to that page | pass |
+| all products | a pop up of by price/by category/all products show | click on all products | a pop up of by price/by category/all products show | pass |
+| tadtional | filters to that category on products page | click on tadtional | filters to that category on products page | pass |
+| modern | filters to that category on products page  | click on modern | filters to that category on products page | pass |
+| anime | filters to that category on products page  | click on anime  | filters to that category on products page | pass |
+| by price | sets price of products lowest to higest | click on by price | sets price of products lowest to higest | pass |
+| by category | ranges products y alphabetically catergory wise | click on by category | ranges products y alphabetically catergory wise | pass |
+| all products | all products are shown | click on all products | all products are shown | pass |
+
+
+#### Footer
+
+| Feature being tested | Expected Outcome | Testing Performed | Actual Outcome | Result (Pass or fail) |
+| -------------------- | ---------------- | ----------------- | -------------- | --------------------- |
+| Facebook link | When facebook icon is clicked, it takes you to the facebook website on a separate page | Click on facebook icon and inspect if taken to a separate facebook page | Takes you to a seperate facebook page | Pass |
+| Github link | When github icon is clicked, it takes you to the github website on a separate page | Click on github icon and inspect if taken to a separate github page | Takes you to a seperate github page | Pass |
+
+#### Index page
+
+| Feature being tested | Expected Outcome | Testing Performed | Actual Outcome | Result (Pass or fail) |
+| -------------------- | ---------------- | ----------------- | -------------- | --------------------- |
+| shop now button on landing | takes you to all products in products page | click on shop now | takes you to all products in products page | pass |
+|shop now button on traditional | filters tardional on products page | click on shop now | filters tardional on products page | pass |
+| shop now button on modern |filters modern on products page | click on shop now | filters modern on products page | pass |
+| shop now button on anime | filters anime on products page | click on shop now | filters anime on products page | pass |
+| mailchimp proper email | a pop up saying thankyou for subscribing shows up | put in email with a @ | a pop up saying thankyou for subscribing shows up  | pass |
+| mailchimp invalid email | a pop up saying invalid shows up | put in email without a @ | a pop up saying invalid shows up | pass |
+| mailchimp no email | a pop up saying invalid shows up | subscribe with no email | a pop up saying invalid shows up | pass |
+
+
+#### product page
+
+| Feature being tested | Expected Outcome | Testing Performed | Actual Outcome | Result (Pass or fail) |
+| -------------------- | ---------------- | ----------------- | -------------- | --------------------- |
+| sort by search bar |  displays price low to high/high to low, name a-z/z-a, category a-z/z-a | click on sort search bar | displays price low to high/high to low, name a-z/z-a, category a-z/z-a | pass |   
+| price low to high/high to low | filters the desired results |  |  |  |
+| name a-z/z-a | filters the desired results | click on name a-z/z-a   | filters the desired results | pass |
+| category a-z/z-a | filters the desired results |click on category a-z/z-a  | filters the desired results | pass |
+| price low to high/high to low | filters the desired results | click on price low to high/high to low  | filters the desired results | pass |
+| click on image | takes you to product detail page | click on image | takes you to product detail page | pass |
+| (admin)click on edit on product | takes you to product management page | click on edit | takes you to product management page | pass |
+| (admin)click on delete on product |deletes product | click on delete | deletes product | pass |
+| edit/delete not show to non admin | edit/delet does not show to non admin | check with a non admin user | edit/delet does not show to non admin | pass |
+
+#### product-detail page
+
+| Feature being tested | Expected Outcome | Testing Performed | Actual Outcome | Result (Pass or fail) |
+| -------------------- | ---------------- | ----------------- | -------------- | --------------------- |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+
 
 
 
