@@ -418,11 +418,11 @@ header {
     }
 
     .back0 {
-        margin-top: 80px;
+        margin-top: 85px;
     }
 
     .picture-whole {
-        margin-top: 120px;
+        margin-top: 140px;
     }
 }
 
@@ -485,6 +485,13 @@ header {
     }
 }
 
+@media screen and (max-width: 448px) {
+    .menu-icon {
+        padding: 0;
+    }
+    
+}
+
 
 @media screen and (max-width: 420px) {
     .form-reg {
@@ -504,11 +511,11 @@ header {
 
 @media screen and (max-width: 408px) {
     .back0 {
-        margin-top: 154px;
+        margin-top: 90px;
     }
 
     .picture-whole {
-        margin-top: 160px;
+        margin-top: 150px;
     }
 
     .index-cover {
@@ -523,6 +530,10 @@ header {
     
     .head-size-second {
         font-size: 15px;
+    }
+
+    .menu-icon {
+        font-size: 10px;
     }
 }
 
