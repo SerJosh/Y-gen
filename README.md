@@ -1377,21 +1377,21 @@ all include base.html
 
 bag.html
 
-![bag.html]()
+![bag.html](documentation/html-bag.png)
 
-errors 
+no errors detected
 
 checkout_success.html
 
-![checkout_success.html]()
+![checkout_success.html](documentation/html-succ.png)
 
-errors
+no errors detected
 
 checkout.html
 
-![checkout.html]()
+![checkout.html](documentation/html-checkout.png)
 
-errors
+no errors detected
 
 edit_home.html
 
@@ -1401,9 +1401,9 @@ no errors detected
 
 index.html
 
-![index.html]()
+![index.html](documentation/html-home.png)
 
-errors
+no errors detected
 
 add_pictures.html
 
@@ -1425,9 +1425,9 @@ errors
 
 pictures.html
 
-![pictures.html]()
+![pictures.html](documentation/html-pictures.png)
 
-errors
+no errors detected
 
 favourites.html
 
@@ -1437,9 +1437,9 @@ no errors detected
 
 profile.html
 
-![profile.html]()
+![profile.html](documentation/html-profile.png)
 
-errors
+no errors detected
 
 404.html
 
@@ -1449,9 +1449,9 @@ Checking for errors on this page proved to be difficult as with the template tag
 
 email_confirm.html
 
-![email_confirm.html]()
+![email_confirm.html](documentation/html-em-conf.png)
 
-errors
+no errors detected
 
 login.html
 
@@ -1461,9 +1461,9 @@ no errors detected
 
 logout.html
 
-![logout.html]()
+![logout.html](documentation/html-logout.png)
 
-errors
+no errors detected
 
 password_reset_done.html
 
@@ -1491,9 +1491,9 @@ no errors detected
 
 signup.html
 
-![signup.html]()
+![signup.html](documentation/html-signup.png)
 
-errors
+The list of errors constitue unclosed span and p elements I do not have control over as they are all in allauth template tags where I cannot reach.
 
 #### CSS
 
@@ -1771,7 +1771,7 @@ no errors detected
 | Text readability | Enough margins and padding to make text readable | Read all text blocks at all different media query breakpoints | The text is readable at all breakpoints | Pass |
 | All fields required | An error message appears when the user tries to sign in but leaves one field empty | Leave one field empty one by one and try to Sign In | An error message appeared when a field was left empty | Pass |
 | Sign In button | When the "Sign In" button is pressed, the user gets signed in | Click at "Sign In" button | The user gets signed in | Pass |
-| Redirected | When the "Sign In" button is pressed, the user gets redirected to the page they visited before | index.html authenticatted page, click Sign in, press "Sign In" button | The user got redirected to index.html authenticatted page | Pass |
+| Redirected | When the "Sign In" button is pressed, the user gets redirected to the page they visited before | index.html authenticatted page, click Sign in, press "Sign In" button | The user got redirected to index.html page | Pass |
 
 ##### Sign out page
 
