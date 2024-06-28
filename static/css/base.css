@@ -485,7 +485,7 @@ header {
     }
 }
 
-@media screen and (max-width: 448px) {
+@media screen and (max-width: 454px) {
     .menu-icon {
         padding: 0;
     }
