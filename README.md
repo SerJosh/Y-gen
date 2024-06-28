@@ -1131,6 +1131,8 @@ Several custom models were predicted to be required when building the site. The 
 
 ### Social Media Marketing
 
+The Marketing Stratergy Would be Facebook, as it has the most users in the world, and within the facebook page is a link to the website to give customer access to engage with the store. Facebook is good as there are many users and they can share with one another. If someone isnt really interested in Yugen they will know of someone who is and from that logic, word of yugen will spread to those interested in japanese inspired artworks.
+
 Facebook was used as an extension for social media marketing for this website, if still active this is the facbook business page [Yugen](https://www.facebook.com/profile.php?id=61561504131258)
 
 Here are the screenshots of the page.
@@ -1449,7 +1451,8 @@ no errors detected
 
 ![404.html](documentation/check-404.png)
 
-Checking for errors on this page proved to be difficult as with the template tags, you can only use a url link to check the code, and with the 404, the url link will obviously be incorrect.
+   * Checking for errors on this page proved to be difficult as with the template tags, you can only use a url link to 
+    check the code, and with the 404, the url link will obviously be incorrect.
 
 email_confirm.html
 
@@ -1965,6 +1968,20 @@ Create an account or login to save this information | pass |
 | Redirected | When the "password reset" button is pressed, the user gets redirected to the page they visited before | Visit change sign in page page, click reset password| The user got redirected to password reset page | Pass |
 | email confirmation | when resseting password, email verifcation is sent | reset password and check if recieved email | recieved email | pass |
 
+
+#### Notable Bugs
+
+* On the pictures details page, it seems to think that there is missing closing tags that do not appear to be missing.
+In thepictures_detail.html template, on line 79 an if block is opened - then inside that, an inner if block is opened, which is closed on line 88. Then the div is close before closing the original if block. If the user is not authenticated - that closing tag won't appear. I have went to a mentor and tutor about this and they are both usuer how to fix it as it seems correct.
+
+* Regarding the 404.html validation, checking for errors on this page proved to be difficult as with the template tags, 
+   you can only use a url link to 
+    check the code, and with the 404, the url link will obviously be incorrect.
+
+* On the Product management page, when you edit or add an item, there is a field where you can add a favorite to a user. I did not intend for this and due to time constaints I was unable to fix it.
+
+* On custom_clearable_input_file.html there is a code in red, it works and i know the red isnt good, but no errors were thrown while implementing the website
+
 #### Technologies Used
 
 * Python
@@ -2103,5 +2120,7 @@ This can be done by:
 ### Acknowledgements
 
 I'd like to thank the following:
-* 
-* 
+* Jesus Christ my saviour, for getting me through the hard times of this course and rewarding my effort.
+ It has been a touggh journey and he has taken me through it where Id never believ I could
+* Matt Bodden my mentor, for his invalueble guidance of this project and others, he may be Welsh but hes a great guy and teacher.
+* My Wife and Son for being there for me, giving me all the support. Id never be here if it wasnt for them.
