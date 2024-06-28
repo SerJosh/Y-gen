@@ -25,6 +25,7 @@ Please note: To open any links in this document in a new browser tab, please pre
     + [The Structure Plane](#the-structure-plane)
     + [The Skeleton Plane](#the-skeleton-plane)
       + [Wireframe mock-ups](#wireframe-mock-ups)
+      + [Database Schema](#database-schema)
       + [Social Media Marketing](#social-media-marketing)
       + [SEO Considerations](#seo-considerations)
   * [The Surface Plane](#the-surface-plane)
@@ -1098,6 +1099,18 @@ Checkout Page
 ![Checkout Page](documentation/wf-checkout.png)
 <br>
 
+### Database Schema
+
+<br>
+
+![Database Schema Diagram]()
+
+<br>
+Several custom models were predicted to be required when building the site. The intention to utilise AllAuth for the user authentication system, which utilises the built in Django User Model removed the need to build a custom User model for user authentication, however some custom information is required, therefore a custom user model was used. An address model was created with the required fields. 
+<br>
+
+![User and Address Models](/static/docs/img/database/user-schema.png)
+
 
 ### Social Media Marketing
 
@@ -1715,23 +1728,13 @@ custom_storages.py
 no errors detected
 
 ### Manual Testing
-
-| Feature being tested | Expected Outcome | Testing Performed | Actual Outcome | Result (Pass or fail) |
-| -------------------- | ---------------- | ----------------- | -------------- | --------------------- |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
+  Manual testing was done for each of the pages of this website.
 
 #### Header/nav
 
 | Feature being tested | Expected Outcome | Testing Performed | Actual Outcome | Result (Pass or fail) |
 | -------------------- | ---------------- | ----------------- | -------------- | --------------------- |
+| Responsive design | The page changes so the content fit at the smallest to the largest screens without scrolling sideways | In DevTools, select the smallest device and make it larger step by step | The page was responsive and changed depending on screen size | Pass |
 | the logo yugen link | takes you back to the home page |go to another page and press yugen  | goes back to landing page | pass |
 | the search icon | a pop up for a seach input shows up | press search | input shows up | pass |
 | search functionality | type a key that is in the website | type a sigle letter/category/name of product | correct results are shown | pass |
@@ -1760,6 +1763,7 @@ no errors detected
 
 | Feature being tested | Expected Outcome | Testing Performed | Actual Outcome | Result (Pass or fail) |
 | -------------------- | ---------------- | ----------------- | -------------- | --------------------- |
+| Responsive design | The page changes so the content fit at the smallest to the largest screens without scrolling sideways | In DevTools, select the smallest device and make it larger step by step | The page was responsive and changed depending on screen size | Pass |
 | Facebook link | When facebook icon is clicked, it takes you to the facebook website on a separate page | Click on facebook icon and inspect if taken to a separate facebook page | Takes you to a seperate facebook page | Pass |
 | Github link | When github icon is clicked, it takes you to the github website on a separate page | Click on github icon and inspect if taken to a separate github page | Takes you to a seperate github page | Pass |
 
@@ -1767,6 +1771,7 @@ no errors detected
 
 | Feature being tested | Expected Outcome | Testing Performed | Actual Outcome | Result (Pass or fail) |
 | -------------------- | ---------------- | ----------------- | -------------- | --------------------- |
+| Responsive design | The page changes so the content fit at the smallest to the largest screens without scrolling sideways | In DevTools, select the smallest device and make it larger step by step | The page was responsive and changed depending on screen size | Pass |
 | shop now button on landing | takes you to all products in products page | click on shop now | takes you to all products in products page | pass |
 |shop now button on traditional | filters tardional on products page | click on shop now | filters tardional on products page | pass |
 | shop now button on modern |filters modern on products page | click on shop now | filters modern on products page | pass |
@@ -1780,6 +1785,7 @@ no errors detected
 
 | Feature being tested | Expected Outcome | Testing Performed | Actual Outcome | Result (Pass or fail) |
 | -------------------- | ---------------- | ----------------- | -------------- | --------------------- |
+| Responsive design | The page changes so the content fit at the smallest to the largest screens without scrolling sideways | In DevTools, select the smallest device and make it larger step by step | The page was responsive and changed depending on screen size | Pass |
 | sort by search bar |  displays price low to high/high to low, name a-z/z-a, category a-z/z-a | click on sort search bar | displays price low to high/high to low, name a-z/z-a, category a-z/z-a | pass |   
 | price low to high/high to low | filters the desired results |  |  |  |
 | name a-z/z-a | filters the desired results | click on name a-z/z-a   | filters the desired results | pass |
@@ -1794,6 +1800,7 @@ no errors detected
 
 | Feature being tested | Expected Outcome | Testing Performed | Actual Outcome | Result (Pass or fail) |
 | -------------------- | ---------------- | ----------------- | -------------- | --------------------- |
+| Responsive design | The page changes so the content fit at the smallest to the largest screens without scrolling sideways | In DevTools, select the smallest device and make it larger step by step | The page was responsive and changed depending on screen size | Pass |
 | image | when clicked on image displays image on a bigger page | click on image | image displays image on a bigger page | pass |
 | edit/delete only shown to admin | when logged in as admiin edit/delete is show on product detail | login as admin and check | edit/delete is show on product detail | pass |
 | (admin)click on edit on product | takes you to product management page | click on edit | takes you to product management page | pass |
@@ -1816,6 +1823,7 @@ no errors detected
 
 | Feature being tested | Expected Outcome | Testing Performed | Actual Outcome | Result (Pass or fail) |
 | -------------------- | ---------------- | ----------------- | -------------- | --------------------- |
+| Responsive design | The page changes so the content fit at the smallest to the largest screens without scrolling sideways | In DevTools, select the smallest device and make it larger step by step | The page was responsive and changed depending on screen size | Pass |
 |go to secure checkout  | takes you to bag page |click secure checkout  | takes you to bag page | pass |
 | totals | totals are summed up accurately displaying deliver/bag total/grand total | check bag page totals | totals are summed up accurately displaying deliver/bag total/grand total | pass |
 | quantity plus | incleases the amount by 1 | click plus | incleases the amount by 1 | pass |
@@ -1830,6 +1838,7 @@ no errors detected
 
 | Feature being tested | Expected Outcome | Testing Performed | Actual Outcome | Result (Pass or fail) |
 | -------------------- | ---------------- | ----------------- | -------------- | --------------------- |
+| Responsive design | The page changes so the content fit at the smallest to the largest screens without scrolling sideways | In DevTools, select the smallest device and make it larger step by step | The page was responsive and changed depending on screen size | Pass |
 | checkout(unregestered) | card input is not there but options to sign in, sign out | check checkout page unregestered | card input is not there but options to sign in, sign out | pass |
 | register  | takes you to that page | click on regester | takes you to that page | pass |
 | login  | takes you to that page | click on login | takes you to that page | pass |
@@ -1848,9 +1857,53 @@ Create an account or login to save this information | pass |
 | checkout success page | displays all details of the order | look at successpage | displays all details | pass |
 
 
+#### my profile page
+
+| Feature being tested | Expected Outcome | Testing Performed | Actual Outcome | Result (Pass or fail) |
+| -------------------- | ---------------- | ----------------- | -------------- | --------------------- |
+| Responsive design | The page changes so the content fit at the smallest to the largest screens without scrolling sideways | In DevTools, select the smallest device and make it larger step by step | The page was responsive and changed depending on screen size | Pass |
+| order history | when made an order it is displayed | make an order and go back to my profile | order is displayed | pass |
+| view order history | when clicked on an order history it takes you to the order details | click on one of the order histories | it takes you to the order details | pass |
+| Filling out fields | when you fill in or remove something from a field it is updated when you click on update information | change the fields then go to check out and see if information has changed as desired | fields are updated | pass |
+
+#### Favorites
+
+| Feature being tested | Expected Outcome | Testing Performed | Actual Outcome | Result (Pass or fail) |
+| -------------------- | ---------------- | ----------------- | -------------- | --------------------- |
+| Responsive design | The page changes so the content fit at the smallest to the largest screens without scrolling sideways | In DevTools, select the smallest device and make it larger step by step | The page was responsive and changed depending on screen size | Pass |
+| ad to favorites | when clicked adds to favorite page | click on add to favorite | adds to favorite page | pass |
+| Home |when clicked takes you back to the landing page  | click on home | takes you to the home page | pass |
+| Image in favorites | clicking on image takes you to the product details page | click on image | takes you to the product details page | pass |
 
 
+#### Product Management add
 
+| Feature being tested | Expected Outcome | Testing Performed | Actual Outcome | Result (Pass or fail) |
+| -------------------- | ---------------- | ----------------- | -------------- | --------------------- |
+| Responsive design | The page changes so the content fit at the smallest to the largest screens without scrolling sideways | In DevTools, select the smallest device and make it larger step by step | The page was responsive and changed depending on screen size | Pass |
+| Product management form | when not entered name/decription/price it tells you to fill in the field | dont enter name/decription/price respectively  |  it tells you to fill in the field | pass |
+| category | when selected category all the categories are displayed | select category | all categories are displayed | pass |
+| category | when a category is selected it is displayed on the field | select a category | it is displayed on the field | pass |
+| select image | when clicked you are able to select an image and it is loaded | click select image and choose an image | image is loaded | pass |
+| add product | when the fields are complete and you click add product the product is added to the products page | create a product and add it | it is on the products page | pass |
+|cancel  | takes you back to the products page | click cancel | takes you back to the products page  | pass |
+
+#### Product Management add
+
+| Feature being tested | Expected Outcome | Testing Performed | Actual Outcome | Result (Pass or fail) |
+| -------------------- | ---------------- | ----------------- | -------------- | --------------------- |
+| Responsive design | The page changes so the content fit at the smallest to the largest screens without scrolling sideways | In DevTools, select the smallest device and make it larger step by step | The page was responsive and changed depending on screen size | Pass |
+| edit product | when changing the fields category/sku/name/description/price/image url it is changed | change details respectively click update product and check the product details | the details have been edited | pass |
+| remove image | removes the image then displays a default no image | click remove image and press update product | there is no image but the default image | pass |
+| select image | when clicked you are able to select an image and it is loaded | click select image and choose an image | image is loaded | pass |
+|cancel  | takes you back to the products page | click cancel | takes you back to the products page  | pass |
+
+#### Update Management
+| Feature being tested | Expected Outcome | Testing Performed | Actual Outcome | Result (Pass or fail) |
+| -------------------- | ---------------- | ----------------- | -------------- | --------------------- |
+| Responsive design | The page changes so the content fit at the smallest to the largest screens without scrolling sideways | In DevTools, select the smallest device and make it larger step by step | The page was responsive and changed depending on screen size | Pass |
+| update | when you type in text box and press update the results are shown on the landing page | type in the text box and check the landing page | the results have change accordingly | pass |
+|back  | takes you back to the home page | click back | takes you back to the home page  | pass |
 
 
 #### Allauth pages
