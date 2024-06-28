@@ -1102,14 +1102,31 @@ Checkout Page
 ### Database Schema
 
 <br>
-
-![Database Schema Diagram]()
-
-<br>
 Several custom models were predicted to be required when building the site. The intention to utilise AllAuth for the user authentication system, which utilises the built in Django User Model removed the need to build a custom User model for user authentication, however some custom information is required, therefore a custom user model was used. An address model was created with the required fields. 
 <br>
 
-![User and Address Models](/static/docs/img/database/user-schema.png)
+#### Custom Models
+ The Custom models are for the Products model where the originality is from the favorites data where it enable the functionality of adding favorites from the products themselves, the Reviews Model to give reviews of the products and the update headline for admin to edit the update for users to get notified of anything the store wants customers to be aware of.
+ The Review model links to the Product model(product) via Forign Key and links to the User model(name)  via Forign Key where the User model is from allauth.
+ The Product model links to the Category model(category).
+ Favorites used for Many to may field from User
+
+![Custom Models](documentation/custom-models.png)
+
+#### Checkout Models
+ The Order model links to the User Profile Model(user_profile) via Forign Key.
+ The OrderLineItem Model links up to the Order Model(order) and the Product model(product) via Forign Key.
+
+![Checkout Models](documentation/data-checkout.png)
+
+#### Profile Models
+ The Profile Model links up to the User Model via One To One Field
+
+![Profile Models](documentation/data-profile.png)
+
+#### Pictures Models
+
+![Pictures Models](documentation/data-category.png)
 
 
 ### Social Media Marketing
